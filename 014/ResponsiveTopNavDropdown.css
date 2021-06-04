@@ -157,13 +157,14 @@ hr {
 }
 
 .hero img {
-    position:absolute;
+    width: 100%;
 }
 
 .hero div img {
-    padding: 9em;
-    height: 25em;
-    width: auto;
+    position: absolute;
+    width: 40%;
+    left: 5%;
+    bottom: 15%;
 }
 
 .graphic {
@@ -189,6 +190,8 @@ hr {
 
 .img-left {
     /* Your code goes here! */
+    grid-template-areas: 'image text text';
+    text-align: end;
 }
 
 .img-right {
@@ -201,6 +204,7 @@ hr {
 
 .img-left p {
     /* Your code goes here! */
+    grid: 3;
 }
 
 .grid img {
@@ -209,6 +213,9 @@ hr {
 
 .img-left img {
     /* Your code goes here! */
+    grid: 1/1;
+    height: 200px;
+    align-self: center;
 }
 
 .grid div {
