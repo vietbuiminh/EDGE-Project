@@ -1,0 +1,49 @@
+:root {
+    --r: red;
+    --o: orange;
+    --y: yellow;
+    --g: green;
+    --b: blue;
+    --i: indigo;
+    --v: violet;
+}
+
+#red {color: var(--r);}
+#orange {color: var(--o);}
+#yellow {color: var(--y);}
+#green {color: var(--g);}
+#blue {color: var(--b);}
+#indigo {color: var(--i);}
+#violet {color: var(--v);}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    padding: 0 0 1em 0;
+}
+
+body {
+    margin: 2em;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: white;
+    animation-name: title;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes title {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: green;}
+    75%  {color: blue;}
+    100% {color: red;}
+}
+
