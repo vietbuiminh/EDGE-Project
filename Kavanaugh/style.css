@@ -47,15 +47,35 @@ img {
     margin: 90px auto auto auto;
 }
 
+/*Navigation Contents*/
+.navcontent {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navcontentleft {
+    position: relative;
+    float: left;
+    width: 163px;
+}
+
+.navcontentright {
+    position: relative;
+    float: right;
+    width: 537px;
+}
+
 /* Navigation Bar */
 .topnav {
+    display: flex;
     overflow: hidden;
     background-color: var(--d);
+    justify-content: center;
 }
 
 .topnav a {
     float: left;
-    display: block;
     color: var(--w);
     text-align: center;
     text-decoration: none;

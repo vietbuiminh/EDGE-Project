@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,25 +12,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap" rel="stylesheet">
     <!--End of Google Fonts-->
-    
+
 </head>
+
 <body>
     <div class="container">
         <header class="header">
             <h1 class="title">Kavanaugh's Hilltop Tap</h1>
         </header>
+        <div class="navcontent">
+            <!--Navigation Bar stay on the right-->
+            <section class="navcontentright">
+                <nav class="topnav" id="nav">
+                    <a href="#kavanaughs">Kavanaugh's</a>
+                    <a href="#aboutus">About Us</a>
+                    <a href="#landing">Leprechaun Landing</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#events">Events</a>
+                    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+                        </svg>
+                    </a>
+                </nav>
+            </section>
 
-        <nav class="topnav" id="nav">
-            <a href="#kavanaughs">Kavanaugh's</a>
-            <a href="#aboutus">About Us</a>
-            <a href="#landing">Leprechaun Landing</a>
-            <a href="#menu">Menu</a>
-            <a href="#events">Events</a>
-            <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
-            </a>
-        </nav>
+            <!--Special Column stay on the left-->
+            <section class="navcontentleft">
+                <div class="secondtitle">
+                    <h1>Kavanaugh's Hilltop Tap</h1>
+                </div>
+                <p>1228 30th St. <br>
+                    Rock Island, IL <br>
+                    (309) 786-9055
+                </p>
+                <img src="img/ginger_beer_guy.png" alt="iconic of irish man holding a beer hug">
+                <div class="specials">
+                    <h2>Specials</h2>
+                    <a href="#mon">Monday</a>
+                    <a href="#tue">Tuesday</a>
+                    <a href="#wed">Wednesday</a>
+                    <a href="#thu">Thursday</a>
+                    <a href="#fri">Friday</a>
+                    <a href="#sat">Saturday</a>
+                    <a href="#sun">Sunday</a>
+                </div>
+            </section>
+        </div>
+
     </div>
-    
+
 </body>
+
 </html>
