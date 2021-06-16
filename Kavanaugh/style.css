@@ -53,11 +53,11 @@ img {
     width: 100%;
     overflow: hidden;
 }
-
 .navcontentleft {
     position: relative;
     float: left;
     width: 163px;
+    background-image: url('img/wood_bg.jpg');
 }
 
 .navcontentright {
@@ -92,5 +92,189 @@ img {
 
 .topnav .icon {
     display: none;
+    fill: var(--w);
+}
+
+/* Navigation Special Column */
+.secondtitle {
+    display: flex;
+    background-color: var(--g);
+    height: 78px;
+}
+.secondtitle h1 {
+    color: var(--w);
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.insidecontentleft {
+    padding: 10px;
+    text-align: center;
+}
+
+.insidecontentleft p {
+    color: var(--w);
+}
+
+.insidecontentleft img {
+    margin: 10px;
+}
+
+.special {
+    background-color: var(--w);
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.special h2 {
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.special a {
+    display: block;
+    text-decoration: none;
+    color: var(--dg);
+    padding: 18px;
+}
+
+.special a:hover {
+    text-decoration: underline;
+}
+
+/* Body Content */
+.bodycontent {
+    background-color: var(--w);
+    padding: 15px;
+}
+
+.content_title {
+    text-align: center;
+    padding: 10px;
+}
+
+.content_title h3 {
+    color: var(--dg);
+}
+
+.content {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.content h3 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/*------vertical dividers------*/
+.vertical_div {
+    position: relative;
+    width: 3%;
+}
+
+.greenl {
+    float: left;
+    border-left: 4px solid var(--dg);
+    height: 270px;
+    margin-right: 5px;
+}
+.orangel {
+    float: left;
+    border-left: 4px solid var(--o);
+    height: 270px;
+}
+/*------end of vertical dividers------*/
+
+.contentleft {
+    position: relative;
+    float: left;
+    width: 56%;
+    padding-right: 20px;
+}
+
+.contentright {
+    position: relative;
+    float: right;
+    width: 37%;
+    background-image: url('img/paper.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 260px;
+    width: 201px;
+    padding: 23px;
+}
+
+.imgcontent {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-evenly;
+}
+
+.imgcontentleft img {
+    border: 10px solid var(--dg);
+}
+
+.imgcontentright {
+    margin: auto;
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+    background-color:var(--d);
+    color: var(--w);
+}
+
+.footer p {
+    font-size: 13px;
+}
+
+.foottop {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.foottop h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.footleft {
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.footright {
+    position: relative;
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--w)
+}
+
+.footbottom {
+    display: flex;
+}
+
+.footbottom path {
     fill: var(--w);
 }
