@@ -5,6 +5,10 @@
     --d: #231f20;
     --o: #f78e57;
     --w: #ffff;
+    --shadow: -1px 1px 0 var(--w),
+                1px 1px 0 var(--w),
+                1px -1px 0 var(--w),
+                -1px -1px 0 var(--w);
 }
 * {
     margin: 0;
@@ -27,10 +31,20 @@ img {
     margin: 0 auto 0 auto;
 }
 
+/* Header */
 .header {
+    display: flex;
     background-image: url('img/background_header.jpg');
     width: 100%;
     height: 166px;
+}
+
+.title {
+    font-size: 43px;
+    font-family: 'Catamaran', sans-serif;
+    color: var(--d);
+    text-shadow: var(--shadow);
+    margin: 90px auto auto auto;
 }
 
 /* Navigation Bar */
