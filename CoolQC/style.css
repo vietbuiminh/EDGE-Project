@@ -1,0 +1,134 @@
+:root {
+    --c0: #000000;
+    --c1: #005270;
+    --c2: #44c7f4;
+    --c3: #8dd7f7;
+    --c4: #c6e9fa;
+    --c5: #eee;
+    --w: var(--c0);
+    --shadow: -1px 1px 0 var(--w),
+                1px 1px 0 var(--w),
+                1px -1px 0 var(--w),
+                -1px -1px 0 var(--w);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--c5);
+    font-family: 'Spartan', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+/* Header */
+.home-header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: var(--c1);
+    background-image: url('img/IMG_5674.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+    padding-top: 48px;
+    width: 300px;
+    fill: var(--c5)
+}
+
+.header-nav {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 26vh;
+    justify-content: center;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: var(--c5);
+    font-weight: bold;
+    font-size: 115px;
+}
+
+.nav-spacer {
+    display: flex;
+    width: 30px;
+    height: 15px;
+    background: var(--c2);
+    margin: auto 30px;
+}
+
+/*Sticky Nav*/
+.sticky-nav {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    overflow: hidden;
+    background-color: var(--c2);
+    bottom: -100px;
+    width: 100%;
+    height: 100px; 
+    transition: bottom 0.3s;
+}
+
+.sticky-nav-menu {
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+}
+
+.sticky-nav a {
+    text-decoration: none;
+    color: var(--c1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sticky-nav-logo {
+    width: 174px;
+    padding-left: 31px;
+    padding-top: 24px;
+}
+
+.contact {
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    justify-content: right;
+}
+
+#nav-color {
+    background: var(--c1);
+    height: 10px;
+    width: 10px;
+}
+
