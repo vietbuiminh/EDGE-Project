@@ -1,0 +1,40 @@
+:root {
+  --g: green;
+  --o: orange;
+  --p: purple;
+  --s: lightsalmon;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.one {
+  background-color: var(--g);
+}
+.two {
+  background-color: var(--o);
+}
+.three {
+  background-color: var(--p);
+}
+.four {
+  background-color: var(--s);
+}
