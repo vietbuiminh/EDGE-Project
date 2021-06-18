@@ -76,6 +76,7 @@ section {
     color: var(--c5);
     font-weight: bold;
     font-size: 115px;
+    padding: 10px;
 }
 
 .nav-spacer {
@@ -132,3 +133,51 @@ section {
     width: 10px;
 }
 
+/* ------------ 1635 pixel wide version of the site ------------ */
+
+@media only screen and (min-width:1535px) {
+    .header-nav a {
+        font-size: 90px;
+
+    }
+}
+
+/* ------------ 800 pixel wide version of the site ------------ */
+
+@media only screen and (max-width:1330px) {
+    .header-nav a {
+        font-size: 60px;
+
+    }
+}
+
+/* ------------ 600 pixel wide version of the site ------------ */
+
+@media only screen and (max-width:960px) {
+    .header-nav {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20vh;
+    }
+
+    .nav-spacer {
+        width: 100px;
+        height: 5px;
+    }
+    .header-nav a {
+        font-size: 80px;
+        padding: 30px;
+    }
+}
+
+/* ------------ 400 pixel wide version of the site ------------ */
+
+@media only screen and (max-height:960px) and (max-width:960px) {
+    .header-nav {
+        margin-top: 10vh;
+    }
+    .header-nav a {
+        font-size: 50px;
+        padding: 20px;
+    }
+}
