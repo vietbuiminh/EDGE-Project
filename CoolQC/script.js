@@ -1,9 +1,11 @@
-window.onscroll = function() {scrollFunction()};
-        
-function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.getElementsByClassName('sticky-nav').style.bottom = "100px";
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos < currentScrollPos && ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20))) {
+    document.getElementById("sticky-nav").style.bottom = "0";
     } else {
-    document.getElementsByClassName('sticky-nav').style.bottom = "-100px";
+    document.getElementById("sticky-nav").style.bottom = "-100px";
     }
+    prevScrollpos = currentScrollPos;
 }
