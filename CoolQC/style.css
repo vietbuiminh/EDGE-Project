@@ -77,6 +77,59 @@ section {
   margin: auto 30px;
 }
 
+/* Discover section */
+.discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c5);
+}
+
+.discover-content {
+    overflow: hidden;
+    width: 80vw;
+}
+
+.discover h2 {
+    text-transform: uppercase;
+    font-weight:500;
+    font-size: 50px;
+}
+
+/* People Places Progress Selection Area */
+.ppp {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    position: relative;
+    align-items: center;
+    border: 1px solid black;
+    height: 400px;
+    width: 25vw;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box a{
+    color: var(--c5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3vw;
+    text-shadow: var(--shadow);
+}
+
+.people {
+    background-image: url('img/P2015935.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale();
+}
+
 /*Sticky Nav*/
 #sticky-nav {
   position: fixed;
@@ -123,6 +176,8 @@ section {
   height: 10px;
   width: 10px;
 }
+
+
 
 /* ------------ 1635 pixel wide version of the site ------------ */
 
