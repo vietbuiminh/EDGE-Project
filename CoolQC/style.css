@@ -4,7 +4,7 @@
   --c2: #44c7f4;
   --c3: #8dd7f7;
   --c4: #c6e9fa;
-  --c5: #eee;
+  --c5: white;
   --w: var(--c0);
   --shadow: -1px 1px 0 var(--w), 1px 1px 0 var(--w), 1px -1px 0 var(--w),
     -1px -1px 0 var(--w);
@@ -49,7 +49,6 @@ section {
   margin: auto;
   padding-top: 48px;
   width: 300px;
-  fill: var(--c5);
 }
 
 .header-nav {
@@ -79,58 +78,89 @@ section {
 
 /* Discover section */
 .discover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--c5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c5);
 }
 
 .discover-content {
-    overflow: hidden;
-    width: 80vw;
+  overflow: hidden;
+  width: 80vw;
 }
 
 .discover h2 {
-    text-transform: uppercase;
-    font-weight:500;
-    font-size: 50px;
+  text-transform: uppercase;
+  font-weight:500;
+  font-size: 50px;
+}
+
+.qc-banner {
+  padding-top: 50px;
+}
+
+.qc-banner svg path {
+  stroke: var(--c2);
+  animation-name: gradient-qc;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes gradient-qc {
+  0%   {stroke: var(--c4);}
+  50%  {stroke: var(--c3);}
+  75%  {stroke: var(--c2);}
+  80% {stroke: var(--c3);}
+  100% {stroke: var(--c4);}
 }
 
 /* People Places Progress Selection Area */
 .ppp {
-    display: flex;
-    overflow: hidden;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .box {
-    position: relative;
-    align-items: center;
-    border: 1px solid black;
-    height: 400px;
-    width: 25vw;
-    border-radius: 20px;
-    text-align: center;
+  height: 400px;
+  width: 25vw;
+  border-radius: 20px;
 }
 
 .box a{
-    color: var(--c5);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 3vw;
-    text-shadow: var(--shadow);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: var(--c5);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3vw;
+  text-shadow: var(--shadow);
 }
 
 .people {
-    background-image: url('img/P2015935.jpg');
-    background-position: center;
-    background-size: cover;
-    filter: grayscale();
+  background-image: url('img/P2015935.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: grayscale();
 }
 
-/*Sticky Nav*/
+.places {
+  background-image: url('img/IMG-2097-2.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: grayscale();
+}
+
+.progress {
+  background-image: url('img/i-80_presentation.jpg');
+  background-position: right;
+  background-size: cover;
+  filter: grayscale();
+}
+
+/*--------------Sticky Nav---------------*/
 #sticky-nav {
   position: fixed;
   display: grid;
