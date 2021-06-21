@@ -13,12 +13,15 @@ html, body {
 }
 
 header {
-    margin: auto;
-    text-align: center;
+    /* Your code goes here! */
+    display: flex;
+    justify-content: center;
 }
 
 header img, #logo {
-    padding: 3% 0 3% 0;
+	/* Your code goes here! */
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 header img {
@@ -26,8 +29,10 @@ header img {
 }
 
 #logo {
-    width: 25%;
-    height: auto;
+    /* Your code goes here! */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* -------------------- Start Navigation -------------------- */
@@ -157,14 +162,18 @@ hr {
 }
 
 .hero img {
-    width: 100%;
+    /* Your code goes here! */
+    position: absolute;
 }
 
 .hero div img {
-    position: absolute;
-    width: 40%;
-    left: 5%;
-    bottom: 15%;
+    /* Your code goes here! */
+    position: relative;
+    width: 570px;
+    height: auto;
+    padding-left: 140px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .graphic {
@@ -178,6 +187,7 @@ hr {
 
 .grid {
     display:grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
     grid-gap:5%;
     width:95%;
     margin:2.5% 2.5% 0;
@@ -188,38 +198,45 @@ hr {
     margin:2.5%;
 }
 
-.img-left {
-    /* Your code goes here! */
-    grid-template-areas: 'image text text';
-    text-align: end;
+.img-right {
+    padding-top: 30px;
 }
 
-.img-right {
-    /* Your code goes here! */
+.img-left {
+    padding-top: 30px;
 }
 
 .img-right img {
     /* Your code goes here! */
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.img-left img {
+    /* Your code goes here! */
+    grid-column: 1/2;
+    grid-row: 1/3;
 }
 
-.img-left p {
+.text1 {
     /* Your code goes here! */
-    grid: 3;
+    text-align: right;
+    grid-column: 2/4;
+}
+
+.text2 {
+    /* Your code goes here! */
+    grid-column: 1/3;
 }
 
 .grid img {
     /* Your code goes here! */
+    display: flex;
+    margin: auto;
+    width: 400px;
 }
 
-.img-left img {
-    /* Your code goes here! */
-    grid: 1/1;
-    height: 200px;
-    align-self: center;
-}
 
 .grid div {
-    grid-area: text;
     margin:0 5%;
 }
 
