@@ -165,6 +165,10 @@ section {
 }
 
 /* About Us Section */
+.about-us {
+  padding-bottom: 100px;
+}
+
 .us {
   display: flex;
   overflow: hidden;
@@ -266,7 +270,7 @@ section {
   width: 10px;
 }
 
-/* ------------ 1635 pixel wide version of the site ------------ */
+/* ------------ 1632px wide version of the site ------------ */
 
 @media only screen and (max-width: 1632px) {
   .header-nav a {
@@ -274,7 +278,7 @@ section {
   }
 }
 
-/* ------------ 800 pixel wide version of the site ------------ */
+/* ------------ 1330px wide version of the site ------------ */
 
 @media only screen and (max-width: 1330px) {
   .header-nav a {
@@ -282,7 +286,7 @@ section {
   }
 }
 
-/* ------------ 600 pixel wide version of the site ------------ */
+/* ------------ 960px version of the site ------------ */
 
 @media only screen and (max-width: 960px) {
   .header-nav {
@@ -299,9 +303,25 @@ section {
     font-size: 80px;
     padding: 30px;
   }
+
+  .us {
+    display: block;
+  }
+  
+  .us-left {
+    padding: 0;
+  }
+
+  .us-left img{
+    height: 50vw;
+  }
+
+  .us-right {
+    padding: 0;
+  }
 }
 
-/* ------------ 400 pixel wide version of the site ------------ */
+/* ------------ 960px wide version of the site ------------ */
 
 @media only screen and (max-height: 960px) and (max-width: 960px) {
   .header-nav {
@@ -310,5 +330,30 @@ section {
   .header-nav a {
     font-size: 50px;
     padding: 20px;
+  }
+  .adjust {
+    align-items: none;
+    height: auto;
+    padding-top: 50px;
+  }
+  .ppp {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .box {
+    width: 80vw;
+  }
+
+  .box p {
+    font-size: 50px;
+  }
+
+  .qc-banner {
+    width: 200%;
+  }
+
+  .us-left img {
+    width: 80vw;
   }
 }
