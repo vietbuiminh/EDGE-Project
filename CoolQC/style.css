@@ -143,6 +143,7 @@ section {
   width: 25vw;
   border-radius: 20px;
   transition: 0.2s;
+  transform: scale(0.98);
 }
 
 .box p {
@@ -178,15 +179,13 @@ section {
 }
 
 .ppp:hover .box {
-  transform: scale(0.95);
-  opacity: 0.5;
+  transform: scale(0.98);
 }
 
 .ppp .box:hover {
   filter: blur(0px);
   transform: scale(1);
-  opacity: 1;
-  box-shadow: #696969 0px 10px 40px -12px;
+  box-shadow: #142235 0px 10px 40px -12px;
 }
 
 /*--------------Sticky Nav---------------*/
