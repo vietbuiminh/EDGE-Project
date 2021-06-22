@@ -31,7 +31,7 @@ function changePlaces() {
     discoverinfo.innerHTML = "Discover awesome locations in Quad Citites area.";
 }
 
-function changePeople() {
+function changeProgress() {
     discoverinfo.innerHTML = "Read stories about Quad Cities' progress.";
 }
 

@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    max-width:1600px;
+    margin:auto;
+    overflow-x:hidden;
+}
+
+body {
+    margin:0 !important;
+    padding:0 !important;
+    overflow-x:hidden;
+    background:#0B090A !important;
+}
+
+h1 {
+    font-size:4vw;
+}
+
+h2 {
+    font-size:3vw;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    color:#D1BA9E;
+    letter-spacing:1px;
+    text-align:center;
+}
+
+p {
+    color:white;
+    font-size:1.5vw;
+}
+
+a{
+    color:#D1BA9E;
+    text-decoration:underline !important;
+}
+
+header {
+    z-index:1;
+    position:relative;
+    background:#000a;
+}
+
+header .mobile-only {
+    padding:1.25%;
+}
+
+.mobile-only {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo {
+    width:75%;
+}
+
+.active {
+    border-bottom: 3px solid #94744b;
+}
+
+#banner {
+    width:100%;
+    margin-top:-10%;
+    z-index:-1;
+    min-height:250px;
+}
+
+main > div:last-child {
+    padding:5% 2.5%;
+    align-items:center;
+}
+
+.one-thirds-column-grid, .two-thirds-column-grid {
+    display:grid;
+    padding:2.5%;
+    background:#0E0E0E;
+}
+
+.one-thirds-column-grid img, .two-thirds-column-grid img {
+    width:90%;
+    padding:5%;
+}
+
+.one-thirds-column-grid p, .two-thirds-column-grid p {
+    padding:0 15%;
+}
+
+.one-thirds-column-grid {
+    grid-template-columns:1fr 2fr;
+}
+
+.big-button {
+    background:#4E2207;
+    width:min-content;
+    font-size:1.75vw;
+    text-transform:uppercase;
+    text-decoration:none;
+    display:flex;
+    margin:auto;
+    padding:2.5% 10%;
+    border-radius:999px;
+}
+
+.big-button:hover {
+    background:#71320C;
+}
+
+.two-thirds-column-grid {
+    grid-template-columns:2fr 1fr;
+}
+
+.aside div:last-child {
+    border-left:3px solid #94744b;
+}
+
+.mobile-only {
+    display:none;
+}
+
+ol {
+    color:White;
+    line-height:25px;
+}
+
+@media only screen and (min-width:1600px) {
+    /* Your code goes here! */
+}
+
+@media only screen and (max-width:900px) {
+    /* Your code goes here! */
+}

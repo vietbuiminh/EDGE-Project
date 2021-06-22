@@ -39,7 +39,7 @@ section {
   text-align: center;
   width: 100%;
   background-color: var(--c1);
-  background-image: url("img/IMG_5674.JPG");
+  background-image: url("img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -76,6 +76,9 @@ section {
   background: var(--c2);
   margin: auto 30px;
 }
+
+/*-----------Button--------------*/
+
 
 /* Discover section */
 .adjust {
