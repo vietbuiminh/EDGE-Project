@@ -6,10 +6,10 @@ var discoverinfo = document.getElementById("discover-info");
 
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos < currentScrollPos && ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20))) {
+        if (prevScrollpos < currentScrollPos && ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50))) {
         document.getElementById("sticky-nav").style.bottom = "0";
         } else {
-        document.getElementById("sticky-nav").style.bottom = "-100px";
+        document.getElementById("sticky-nav").style.bottom = "-200px";
         }
         prevScrollpos = currentScrollPos;
     }

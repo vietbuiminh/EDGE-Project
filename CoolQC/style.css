@@ -62,6 +62,7 @@ section {
 }
 
 .header-nav a {
+  position: relative;
   text-decoration: none;
   color: var(--c5);
   font-weight: bold;
@@ -77,6 +78,18 @@ section {
   margin: auto 30px;
 }
 
+.underline {
+  position: absolute;
+  background-color: var(--c2);
+  bottom: 0;
+  width: 0;
+  height: 10px;
+  transition: width 300ms linear;
+}
+
+.header-nav a:hover .underline{
+  width: 95%;
+}
 /*-----------Button--------------*/
 
 /* Discover section */
@@ -299,14 +312,21 @@ section {
   }
 
   .nav-spacer {
-    width: 100px;
-    height: 5px;
+    width: 0;
+    height: 0;
   }
+
   .header-nav a {
     font-size: 80px;
     padding: 30px;
   }
+<<<<<<< HEAD
 
+=======
+  .header-nav a:hover .underline{
+    width: 90%;
+  }
+>>>>>>> 69023023b3cce21b46d3a22e495a687d26dfa20d
   .us {
     display: block;
   }
