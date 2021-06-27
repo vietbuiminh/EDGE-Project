@@ -288,7 +288,7 @@ section {
 #sticky-nav {
   position: fixed;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   overflow: hidden;
   background-color: var(--c5);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px 10px,
@@ -307,23 +307,17 @@ section {
 }
 
 #sticky-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   text-decoration: none;
+  padding: 5px 7px 4px 7px;
   color: var(--c0);
-  font-size: 16px;
   font-weight: bold;
   border: solid white;
   border-radius: 30px;
-  padding: 5px 15px 4px 15px;
   transition: ease 0.3s;
-}
-
-#sticky-nav a:hover {
-  border-color: var(--c2);
-  color: var(--c2);
-}
-
-#sticky-nav a#active {
-  color: var(--c2);
 }
 
 #sticky-nav-logo {
@@ -335,10 +329,9 @@ section {
 #contact {
   display: flex;
   overflow: hidden;
-  margin: auto;
   justify-content: right;
+  margin: auto;
 }
-
 #nav-color {
   background: var(--c2);
   height: 10px;
@@ -359,7 +352,32 @@ section {
   margin: 5px;
   transition: all 0.3s ease;
 }
+.social-media-nav {
+  display: flex;
+}
+.social-media-nav a {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.social-media-nav a svg {
+  width: 30px;
+  height: 30px;
+}
+.mobile-sticky-nav {
+  display: none;
+}
 
+#sticky-nav a:hover {
+  fill: var(--c2);
+  border-color: var(--c2);
+  color: var(--c2);
+}
+
+#sticky-nav a#active {
+  color: var(--c2);
+}
 /* ------------ 1632px wide version of the site ------------ */
 @media only screen and (max-width: 1632px) {
   .header-nav a {
@@ -426,6 +444,7 @@ section {
 
   /* Mobile Sticky Nav */
   .mobile-sticky-nav {
+    display: block;
     position: fixed;
     background: var(--gradient);
     height: 100vh;
@@ -451,6 +470,17 @@ section {
     margin: 10px;
     padding: 10px;
     opacity: 0;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .social-media a svg {
+    fill: white;
+    width: 40px;
+    height: 40px;
   }
 
   .mobile-sticky-nav-menu a:hover {
