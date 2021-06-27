@@ -32,7 +32,6 @@
                         <div class="underline"></div>
                         <div class="nav-title">People</div>
                     </a>
-                    
                     <span class="nav-spacer"></span>
                     <a class="places-header" href="#places">
                         <div class="underline"></div>
@@ -158,6 +157,16 @@
     </div>
 
     <!--Navigation Bar that only appear when scroll down-->
+    <div class="mobile-sticky-nav">
+        <div class="mobile-sticky-nav-menu">
+            <a id="active" class="home" href="#home">Home</a>
+            <a class="people-header" href="#people">People</a>
+            <a class="places-header" href="#places">Places</a>
+            <a class="progress-header" href="#progress">Progress</a>
+            <a class="our-team" href="#team">Our Team</a>
+        </div>
+        
+    </div>
     <div id="sticky-nav">
         <div id="sticky-nav-logo">
             <img src="img\coolqc_logo.svg" alt="Cool QC Logo">
@@ -174,9 +183,11 @@
         <div id="contact">
             <a class="our-team" href="#team">Our Team</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <div class="burger">
+            <div class="l1"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
