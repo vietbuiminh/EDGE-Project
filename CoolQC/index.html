@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cool QC</title>
     <link rel="stylesheet" href="style.css">
 
     <!--Google Fonts-->
@@ -15,6 +15,12 @@
 </head>
 
 <body>
+    <div class="preload">
+        <img src="./img/coolqc_logo_white.svg" alt="">
+        <p class="mission">Highlighting the cool <i>people, places</i>, and <i>progress</i> within the Quad Cities.</p>
+        <p class="loading">Cool stuff is coming, please for a moment...</p>
+    </div>
+
     <div class="container">
         <section class="header">
             <header class="home-header">
@@ -157,6 +163,8 @@
             <img src="img\coolqc_logo.svg" alt="Cool QC Logo">
         </div>
         <div id="sticky-nav-menu">
+            <a id="active" class="home" href="#home">Home</a>
+            <span id="nav-color" class="nav-spacer"></span>
             <a class="people-header" href="#people">People</a>
             <span id="nav-color" class="nav-spacer"></span>
             <a class="places-header" href="#places">Places</a>
@@ -166,6 +174,9 @@
         <div id="contact">
             <a class="our-team" href="#team">Our Team</a>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
     <script src="script.js"></script>
 </body>

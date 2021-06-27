@@ -4,6 +4,11 @@ var places = document.getElementById("places-trigger");
 var progress = document.getElementById("progress-trigger");
 var discoverinfo = document.getElementById("discover-info");
 
+window.addEventListener('load', () => {
+    const preload = document.querySelector(".preload");
+    preload.classList.add("preload-finish");
+});
+
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
         if (prevScrollpos < currentScrollPos && ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50))) {
