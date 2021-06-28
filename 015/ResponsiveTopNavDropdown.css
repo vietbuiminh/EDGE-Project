@@ -137,4 +137,33 @@ ol {
 
 @media only screen and (max-width:900px) {
     /* Your code goes here! */
+    #banner {
+        min-height: 150px;
+    }
+    h1 {
+        font-size: 12vw;
+    }
+    p {
+        font-size: 4.5vw;
+    }
+    .one-thirds-column-grid, .two-thirds-column-grid {
+        display: block;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .one-thirds-column-grid img, .two-thirds-column-grid img {
+        margin: auto;
+        width: 50%;
+    }
+    .big-button {
+        font-size: 1.5rem;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+
+    .two-thirds-column-grid img {
+        display: flex;
+    }
 }
