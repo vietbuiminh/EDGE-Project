@@ -2,7 +2,8 @@
 include('includes/header.php'); ?>
 
 <style>
-    h1 {
+    
+    main h1 {
         text-align:center;
         margin-top:100px;
     }
@@ -20,15 +21,16 @@ include('includes/header.php'); ?>
         width:50%;
         text-align:center;
     }
-    .parallax {
-        background-size:contain;
-        background-position:top;
-    }
+
     .overlay {
         /* some stuff here */
     }
     .two-column-grid img {
         width:100%;
+    }
+
+    .boxed {
+        margin: 0 30%;
     }
     #special {
         padding-bottom:5%;
@@ -37,6 +39,9 @@ include('includes/header.php'); ?>
         width:unset;
     }
     @media only screen and (max-width:1000px) {
+        h1 {
+            
+        }
         .two-column-grid img {
             width:50%;
             justify-self:center;
@@ -59,19 +64,22 @@ include('includes/header.php'); ?>
         <h1>Our Vision, Mission &amp; Goals</h1>
         <div class="two-column-grid" style="grid-gap:5%; width:auto;">
             <img src="images/woman-hazmat.png" alt="Picture of a woman wearing yellow goggles and a white overcoat with her arms folded, looking into the camera" />
-            <div class="left">
+            <div class="left boxed">
                 <h2>Vision</h2>
                 <p>Our vision is women equitably involved in water management in every corner of the globe.</p>
+                <br>
                 <h2>Mission</h2>
                 <p>Our mission is to <i>SEE</i> women's participation in global water management.</p>
             </div>
         </div>
         <div class="two-column-grid" style="grid-gap:5%; width:auto;">
-            <div class="right">
+            <div class="right boxed">
                 <h2>Stimulate</h2>
                 <p>We encourage women’s interest and development in water management and fuel women’s opportunity to    participate in global water management.</p>
+                <br>
                 <h2>Elevate</h2>
                 <p>We raise awareness of the critical role women play in water and sanitation sustainability and create a culture of enthusiasm and vitality around women’s     participation in global water management.</p>
+                <br>
                 <h2>Embolden</h2>
                 <p>We build women’s courage and confidence to be their authentic selves as a woman in global water             management.</p>
             </div>
@@ -79,7 +87,7 @@ include('includes/header.php'); ?>
         </div>
         <img class="banner" src="images/cursive2.png" alt="Cursive script that reads: 'Stimulate. Elevate. Embolden.'" />
         <img style="width:100%;" src="images/women-field.png" alt="Picture of two women wearing blue and yellow dresses with flowers in their hair smiling at an object in the distance in the middle of a field" />
-        <h2 align="center">Goals</h2>
+        <h2 style="margin-top: 7%" align="center">Goals</h2>
         <div class="four-column-grid" id="special">
             <div>
                 <img src="images/goals-mind.png" alt="Icon of gears and a lightbulb superimposed over the human head" />

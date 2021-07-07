@@ -2,7 +2,7 @@
 include('includes/header.php'); ?>
 
 <style>
-    h1 {
+    main h1 {
         text-align:center;
         margin-top:100px;
     }
@@ -15,6 +15,9 @@ include('includes/header.php'); ?>
         margin:auto;
         max-width:100%;
         padding-bottom:5%;
+    }
+    .left {
+        padding: 10%;
     }
 </style>
 
