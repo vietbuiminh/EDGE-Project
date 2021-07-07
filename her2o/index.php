@@ -14,7 +14,7 @@ include('includes/header.php'); ?>
 </style>
     
     <main>
-        <div class="parallax overlay o1">
+        <div class="parallax overlay o1 bolder">
             <div>
                 <h1>The Lift Station</h1>
                 <p>Your donation to The Lift Station elevates women in water and sanitation.<br><br>
@@ -25,7 +25,7 @@ include('includes/header.php'); ?>
             </div>
         </div>
         <img class="banner" src="images/cursive.png" alt="Cursive script that reads: 'The future of water is female'">
-        <div class="overlay o2">
+        <div class="parallax overlay o2 bolder">
             <div>
                 <h1>The Water &amp; Sanitation Industry Needs Women</h1>
                 <p>While water and sanitation continues to be a male-dominated industry, the involvement of women in the management of water and sanitation is critical to water sustainability. Women are the primary users of water. They offer a unique perspective on water and sanitation challenges. Research indicates that when women are involved in water projects, the effectiveness of the project is 6-7 times higher than when women are not involved. Further, there are not enough interested men to satisfy the industry's future workforce demands. Women can fill this workforce gap just as they have done in other fields.<br><br>
@@ -35,7 +35,7 @@ include('includes/header.php'); ?>
                 <a href="#" class="button">Learn More</a></p>
             </div>
         </div>
-        <div class="two-column-grid">
+        <div class="two-column-grid bolder">
             <img src="images/station.jpg" alt="Water Treatment Plant in a third-world country">
             <div class="right">
                 <h1>The Water &amp; Sanitation Crisis</h1>
@@ -44,7 +44,7 @@ include('includes/header.php'); ?>
                 <a href="#" class="button">Learn More</a></p>
             </div>
         </div>
-        <div class="three-column-grid parallax overlay o3">
+        <div class="three-column-grid parallax overlay o3 bolder">
             <div class="center">
                 <p><q><em>I've spent my entire career in this industry, and until H<sup>er</sup><sub>2</sub>O&trade; came along, no one recognized or appreciated women in water and sanitation. No one cared, no one focused on understanding women's needs or how to support them. I don't know of any organization that has done more to move women in this industry forward than H<sup>er</sup><sub>2</sub>O&trade;.</em></q><br><br>
                 
