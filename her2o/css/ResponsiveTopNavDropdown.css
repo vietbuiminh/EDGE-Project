@@ -15,7 +15,7 @@ html {
   max-width: 1600px;
   margin: auto;
   overflow-x: hidden;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 header {
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   align-items: center;
   position: fixed;
   width: 100%;
@@ -83,6 +83,11 @@ header container {
   border-radius: 20px;
 }
 
+#nav {
+  width: 100%;
+  text-align: right;
+}
+
 #nav > a {
   display: none;
 }
@@ -110,7 +115,7 @@ header container {
 }
 #nav > ul > li {
   margin: 0px 20px;
-  padding: 4px 8px;
+  padding: 4px 5px;
   height: 100%;
   display: inline-block;
 }
@@ -219,6 +224,7 @@ p {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5%;
   text-align: center;
+  padding: 7.5%;
 }
 
 .four-column-grid a {
@@ -227,11 +233,12 @@ p {
 }
 
 .four-column-grid img {
-  width: 100%;
+  width: 90%;
 }
 
 .four-column-grid h1 {
-  font-size: 2.5vw;
+  font-weight: 600;
+  font-size: 2vw;
 }
 
 .five-column-grid {
@@ -239,12 +246,12 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10%;
   padding: 0 7.5%;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .five-column-grid h5 {
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: 500;
   white-space: pre;
 }
 
@@ -252,6 +259,8 @@ p {
 .five-column-grid p a {
   color: black;
   text-decoration: none;
+  line-height: 1em;
+  font-weight: 400;
 }
 
 .three-column-grid div img {
@@ -260,6 +269,7 @@ p {
 
 .bolder p {
   font-weight: 400;
+  line-height: 1em;
 }
 
 .button {
@@ -291,7 +301,7 @@ main > p > a {
 }
 
 .two-column-grid img {
-  width: 250px;
+  width: 450px;
 }
 
 .left {
@@ -305,6 +315,8 @@ main > p > a {
 
 .black {
   color: white;
+  font-size: 0.9em;
+  line-height: 0.3em;
   background: #121212;
   margin-top: 2.5%;
   padding: 0 7.5%;
