@@ -23,6 +23,7 @@ include('includes/header.php'); ?>
     }
     .two-column-grid img {
         width:100%;
+        height: auto;
     }
     .left {
         text-align:left;
