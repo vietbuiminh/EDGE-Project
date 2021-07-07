@@ -216,7 +216,6 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10%;
-  text-align: center;
 }
 
 .four-column-grid {
@@ -322,7 +321,6 @@ main > p > a {
   padding: 0 7.5%;
   text-align: left;
   align-items: center;
-  justify-items: center;
 }
 
 .black * {
@@ -354,6 +352,11 @@ main > p > a {
 
 .copyright {
   align-self: end;
+  text-align: center;
+}
+
+.fblogo {
+  justify-self: flex-end;
 }
 
 @media only screen and (max-width: 1000px) {
