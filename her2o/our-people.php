@@ -17,11 +17,11 @@ include('includes/header.php'); ?>
         width: auto;
         height: auto;
         object-fit: none;
-    }
+    }/*
     .button {
         padding:1.25% 2.5%;
         width:12.5%;
-    }
+    }*/
     .brianna {
         padding:5% 10% 0;
     }
@@ -38,11 +38,11 @@ include('includes/header.php'); ?>
         }
         .two-column-grid p{
             text-align: center;
-        }
+        }/*
         .button {
             padding:2.5% 5%;
             width:25%;
-        }
+        }*/
         .brianna {
             padding:0;
         }

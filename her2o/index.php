@@ -61,5 +61,6 @@ include('includes/header.php'); ?>
                 -Sara H.</p>
             </div>
         </div>
+    </main>
     
 <?php include('includes/footer.html'); ?>

@@ -9,7 +9,7 @@ include('includes/header.php'); ?>
         background-size:auto;
         background-position:top;
     }
-    h1 {
+    .parallax h1 {
         text-transform: unset;
     } /*
     h3 {
@@ -110,5 +110,5 @@ include('includes/header.php'); ?>
                 </p>
             </div>
         </div>
-    
+    </main>
 <?php include('includes/footer.html'); ?>

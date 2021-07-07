@@ -176,7 +176,7 @@ main a{
   transform: translateY(0px);
 }
 
-main a:hover{
+main a:hover, .four-column-grid a:hover{
   animation: buttonmove 0.2s ease forwards;
 }
 
