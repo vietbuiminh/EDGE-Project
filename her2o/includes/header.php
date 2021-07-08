@@ -17,6 +17,6 @@
         <a class="logo" href="index.php">
             <img src="images/logo.jpg" alt="Her2O logo, featuring a butterfly">
         </a>
-         <div id="toggleNav" align="center"><a href="#" onclick="toggleNav()"><img src="images/hamburger-icon.png" alt="Hamburger Icon indicating where to click to access the mobile dropdown menu"></a></div>
+         <div id="toggleNav" align="center"><a onclick="toggleNav()"><img src="images/hamburger-icon.png" alt="Hamburger Icon indicating where to click to access the mobile dropdown menu"></a></div>
         <?php include('includes/nav.html'); ?>
     </header>

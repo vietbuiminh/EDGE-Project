@@ -2,7 +2,7 @@
 include('includes/header.php'); ?>
 
 <style>
-    main{
+    main {
         padding: 7.5%;
     }
     main h1, main h2, main h3 {
@@ -143,7 +143,6 @@ include('includes/header.php'); ?>
     }
     @media only screen and (max-width:1000px) {
         .o1 {
-            margin-top:75px !important;
         }
         .benefits-grid{
             grid-template-columns: auto;
@@ -160,6 +159,11 @@ include('includes/header.php'); ?>
         }
         .benefitbox {
             font-size: inherit;
+        }
+    }
+    @media only screen and (max-width:600px) {
+        .benefitbox {
+            font-size: 4vw;
         }
     }
 </style>

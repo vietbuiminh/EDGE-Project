@@ -54,7 +54,10 @@ include('includes/header.php'); ?>
             grid-gap:0 !important;
         }
         .left {
-            text-align:center;
+            text-align:left;
+        }
+        .right {
+            text-align: left;
         } /*
         h1 {
             font-size:30px;

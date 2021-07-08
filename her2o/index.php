@@ -21,7 +21,7 @@ include('includes/header.php'); ?>
                 
                 There will come a day when all that we see in water and sanitation professionals are their skills, talents, and potential, rather than their gender. We want to celebrate that day with you!<br><br>
                 
-                <a href="#" class="button">DONATE</a></p>
+                <a href="https://www.paypal.com/donate?hosted_button_id=35M6P7DDJV7NQ" class="button">DONATE</a></p>
             </div>
         </div>
         <img class="banner" src="images/cursive.png" alt="Cursive script that reads: 'The future of water is female'">

@@ -19,6 +19,12 @@ include('includes/header.php'); ?>
     .left {
         padding: 10%;
     }
+
+    @media only screen and (max-width: 1000px) {
+        .left {
+            text-align: left;
+        }
+    }
 </style>
 
     <main>

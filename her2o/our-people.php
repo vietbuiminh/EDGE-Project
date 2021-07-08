@@ -15,8 +15,6 @@ include('includes/header.php'); ?>
     }
     .two-column-grid img {
         width: auto;
-        height: auto;
-        object-fit: none;
     }/*
     .button {
         padding:1.25% 2.5%;
@@ -51,6 +49,10 @@ include('includes/header.php'); ?>
         main {
             padding-bottom:0;
             padding-top:150px !important;
+        }
+        
+        .two-column-grid img {
+            width: 100%;
         }
     }
 </style>
