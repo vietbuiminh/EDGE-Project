@@ -1,0 +1,388 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Framework by Andy Shearouse
+*/
+html, body{
+	margin:0px !important;
+	padding:0px !important;
+	font-family:'Open Sans', "Myriad Pro", Arial, sans-serif;
+}
+
+img{
+	max-width:100% !important;	
+}
+
+.container{
+	max-width:2000px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+.site-header{
+	display:-ms-grid;
+	display:grid;
+}
+
+/*Use the following for top drop-down nav
+Change the background-color in #nav to change the color of the navigation bar
+Change the background-color in #nav ul li ul to change the background color of the dropdown menus
+These values do also need to be changed further down, in the 600px, 400px, and 300px wide sections 
+*/
+/* -------------------- Start Navigation -------------------- */
+#nav{
+	width: 100%;
+	z-index:10;
+	position:relative;
+	float:left;
+	font-size:16px;
+}
+
+#nav > a{
+	display: none;
+}
+
+#nav li{
+	position: relative;
+	list-style-position:inside;
+	list-style-type:none;
+}
+#nav li a{
+	color: #000;
+	display: block;
+	text-decoration:none;
+}
+
+/* first level */
+
+#nav > ul{
+	text-align:center;
+	padding-left:0px !important;
+	margin-left:0px !important;
+}
+#nav > ul > li{
+	margin:0px 15px;
+	padding:4px 8px;
+	height: 100%;
+	display:inline-block;
+}
+#nav > ul > li > a{
+	height: 100%;
+	text-align: center;
+}
+#nav > ul > li:not( :last-child ) > a{
+	
+}
+
+#nav > ul > li:hover > a,
+#nav > ul:not( :hover ) > li.active > a{
+	
+}
+
+	/* second level */
+
+#nav li ul{
+	background-color:#ccc;
+	display: none;
+	position: absolute;
+	top: 100%;
+	margin-left:0 !important;
+	padding-left:0 !important;
+	width:170px;
+	text-align:left;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+#nav li:hover ul{
+	display: block;
+	left: 0;
+	right: 0;
+}
+#nav li:not( :first-child ):hover ul{
+	left: -1px;
+}
+#nav li ul a{
+	color:#000;
+	padding: 0.75em; /* 15 (20) */
+}
+#nav li ul li a:hover,
+#nav li ul:not( :hover ) li.active a
+{
+}
+/* -------------------- End Navigation -------------------- */
+
+.content-wide{
+	width:92%;
+	padding:0 4% 2% 4%;
+	margin:2% 0;
+}
+
+.sidebar-grid{
+	display:-ms-grid;
+	display:grid;
+	-ms-grid-columns:5fr 2fr;
+	-ms-grid-columns:1fr;
+	grid-template-columns:5fr 2fr;
+	width:94%;
+	margin:2% 3%;
+}
+
+.content-left{
+	padding:0 5% 2% 0;
+}
+
+.content-right{
+	padding:0 5% 2% 5%;
+	margin-top:4.5%;
+}
+
+h1{
+	padding:1% 0 1% 2%;
+}
+
+h2{
+	padding:1.5% 0 0% 0%;
+}
+
+.blue-background{
+	background-color:#bfd8e3;
+}
+
+.three-column-row{
+	display:-ms-grid;
+	display:grid;
+	-ms-grid-columns:1fr 1fr 1fr;
+	grid-template-columns:1fr 1fr 1fr;
+}
+
+.stories{
+	padding:2% 0 0 0;
+}
+
+.story h2{
+	background-color:#bfd8e3;
+	padding:2% 0 2% 4%;
+}
+
+.stories .three-column-row{
+	padding:2% 4%;
+}
+
+.story p{
+	padding:0 6%;
+}
+
+.about{
+	margin:2% 0 6% 0;
+	display:-ms-grid;
+	display:grid;
+	-ms-grid-columns:1fr 2fr;
+	grid-template-columns:1fr 2fr;
+	background-color:#bfd8e3;
+}
+
+.about aside, .about article{
+	padding:4% 12%;
+}
+
+.stories-grid{
+	display:-ms-grid;
+	display:grid;
+	-ms-grid-columns:1fr 2fr;
+	grid-template-columns:1fr 2fr;
+}
+
+.stories-grid aside, .stories-grid article{
+	padding:4% 10%;
+}
+
+.gang{
+	margin-bottom:5%;
+}
+
+.readings{
+	padding:0.5% 4% 2% 4%;
+	background-color:#bfd8e3;
+}
+
+.button{
+	display:inline-block;
+	padding:2%;
+	border:1px solid #000;
+	border-radius:6px;
+	text-decoration:none;
+	color:#000;
+	text-transform:lowercase;
+}
+
+.snazzy{
+	display:inline-block;
+	padding:1% 2%;
+	border:1px solid #000;
+	border-radius:6px;
+	text-decoration:none;
+	color:#000;
+	background-color:#fff;
+	text-transform:lowercase;
+}
+
+.featured{
+	margin:4% 0;
+}
+
+.footer{
+	background-color:#bfd8e3;
+	padding:2% 0;
+}
+
+.footer-nav{
+	padding:0 15%;
+	display:-ms-grid;
+	display:grid;
+	-ms-grid-columns:1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-nav a{
+	text-decoration:none;
+	text-transform:lowercase;
+	color:#000;
+	display:inline-block;
+	padding:1% 2%;
+	margin:1% 0;
+}
+
+.no-margin{
+	margin:0px !important;
+}
+
+.no-padding{
+	padding:0px !important;	
+}
+
+.no-bold{
+	font-weight:normal !important;	
+}
+
+.no-border{
+	border:none !important;
+}
+
+.center{
+	text-align:center;	
+}
+
+.block{
+	display:block !important;	
+}
+
+#q2030 {
+    position:absolute;
+    width:15%;
+    right:5%;
+    bottom:0.5%;
+}
+
+@media only screen and (max-width:720px){
+	.three-column-row{
+		-ms-grid-columns:1fr;
+		grid-template-columns:1fr;
+	}
+	
+	.stories-grid{
+		-ms-grid-columns:1fr;
+		grid-template-columns:1fr;
+	}
+	
+	.about{
+	    -ms-grid-columns:1fr;
+		grid-template-columns:1fr;
+	}
+	
+	.sidebar-grid{
+		-ms-grid-columns:1fr;
+		grid-template-columns:1fr;
+	}
+	
+	/* -------------------- Start Navigation -------------------- */
+	#nav{
+        position: relative;
+    }
+	#nav > a{
+	}
+	
+	#nav:not( :target ) > a:first-of-type,
+	#nav:target > a:last-of-type{
+		display: block;
+		width:100%;
+		text-align:center;
+		color:#000;
+		text-decoration:none;
+		font-size:20px;
+		padding:5px 0px;
+	}
+	
+	#nav a{
+		font-size:18px;	
+	}
+ 
+    /* first level */
+ 
+    #nav > ul{
+        height: auto;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+		background-color:#bfd8e3;
+		margin-top:8px !important;
+		padding-bottom:10px;
+    }
+	#nav:target > ul{
+		display: block;
+	}
+	#nav > ul > li{
+		width: 100%;
+		float: none;
+		margin:0px !important;
+		padding:4px 0px !important;
+	}
+
+    /* second level */
+ 
+    #nav li ul{
+        position: static;
+		width:98%;
+		margin:0 !important;
+		text-align:center;
+		padding:0 !important;
+    }
+	#nav li ul a{
+		padding:0.5em 0;
+		margin:0.25em 0;
+	}
+	/*End Navigation*/
+	
+	.footer-nav{
+		-ms-grid-columns:1fr 1fr;
+		grid-template-columns:1fr 1fr;
+	}
+	
+	.footer-nav a{
+	    margin:2% 0;
+	}
+	
+	#q2030 {
+	    position:relative;
+	    right:0;
+	    bottom:0;
+	    width:inherit;
+	}
+	
+	#q2030 img {
+	    width:50%;
+	    margin-left:25%;
+	}
+}
