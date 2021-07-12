@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+}
+
+body {
+    background-color: #ccc;
+}
+
+footer {
+    background-color: green;
+}
