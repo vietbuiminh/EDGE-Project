@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-
+:root {
+	--bg-color: #bfd8e3;
+}
 /*
 Framework by Andy Shearouse
 */
@@ -147,7 +149,7 @@ h2{
 }
 
 .blue-background{
-	background-color:#bfd8e3;
+	background-color: var(--bg-color);
 }
 
 .three-column-row{
@@ -162,7 +164,7 @@ h2{
 }
 
 .story h2{
-	background-color:#bfd8e3;
+	background-color:var(--bg-color);
 	padding:2% 0 2% 4%;
 }
 
@@ -180,7 +182,7 @@ h2{
 	display:grid;
 	-ms-grid-columns:1fr 2fr;
 	grid-template-columns:1fr 2fr;
-	background-color:#bfd8e3;
+	background-color:var(--bg-color);
 }
 
 .about aside, .about article{
@@ -204,7 +206,7 @@ h2{
 
 .readings{
 	padding:0.5% 4% 2% 4%;
-	background-color:#bfd8e3;
+	background-color:var(--bg-color);
 }
 
 .button{
@@ -233,7 +235,7 @@ h2{
 }
 
 .footer{
-	background-color:#bfd8e3;
+	background-color:var(--bg-color);
 	padding:2% 0;
 }
 
@@ -277,6 +279,9 @@ h2{
 .block{
 	display:block !important;	
 }
+
+
+
 
 #q2030 {
     position:absolute;
@@ -336,7 +341,7 @@ h2{
         position: absolute;
         left: 0;
         right: 0;
-		background-color:#bfd8e3;
+		background-color:var(--bg-color);
 		margin-top:8px !important;
 		padding-bottom:10px;
     }
