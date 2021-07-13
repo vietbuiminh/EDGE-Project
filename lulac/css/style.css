@@ -1,7 +1,7 @@
 :root {
     --blue-theme: #051E5C;
     --red-theme: #BF1140;
-    --opacity-blue-theme: #051e5cda;
+    --opacity-blue-theme: #051e5cc0;
 }
 
 * {
@@ -11,67 +11,218 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.justify {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main p{
+    margin: 0 10%;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
 
-a {
-    text-decoration: none;
-    color: var(--red-theme);
+header {
+    background: transparent;
+    position: relative;
+    width: 100%;
 }
+
+
 
 /* Navigation bar */
-.navbar {
-    background: var(--opacity-blue-theme);
-        /* For webkit */
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-    backdrop-filter: saturate(180%) blur(10px);
+.burger {
+    display: none;
+    cursor: pointer;
+    padding: 8.5px 4px;
+    z-index: 3;
+}
+.burger div {
+    background-color: white;
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.toggle .l1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  .toggle .l2 {
+    opacity: 0;
+  }
+  .toggle .l3 {
+    transform: rotate(45deg) translate(-5px, -5px);
 }
 
+.navbar {
+    background-color: var(--opacity-blue-theme);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-content {
+    padding: 20px;
+}
+
+.socialmedia-position {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialmedia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.twitter img, .facebook img{
+    width: 57px;
+    height: auto;
+}
+.mainnav {
+    padding-top: 60px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.navlink, .logo {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.mainnav li {
+    text-align: center;
+    font-size: 27px;
+    font-weight: normal;
+    z-index: 2;
+}
+.navlink {
+    margin: 10px;
+    padding: 7px 25px;
+    border-radius: 4em;
+    transition: background 0.2s ease;
+}
+.navlink:hover {
+    background: var(--red-theme);
+}
+
+.logo {
+    display: flex;
+    font-size: 22px;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo h1 {
+    margin-top: 8px;
+    font-size: 50px;
+}
+
+.logo img {
+    width: 148px;
+    height: auto;
+}
+/* End of Navigation Bar */
 
 /* Parallax Effect for background images */
 .bg {
-    background-image: url('./img/lulac-bg.jpg');
-    height: 100vh;
-    color: #ccc;
+    background-image: url('../img/lulac-bg.jpg');
+    height: 80vh;
+    max-height: 1080px;
 }
 .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
 }
   
 
 /* Button for the general sites */
 .button {
     background: var(--red-theme);
-    border-radius: 3em;
     color: white;
-    padding: 5px 20px;
+    padding: 4px 25px;
     margin: auto;
+    border-radius: 10em;
     width: fit-content;
+    border: #051e5c00 solid 3px;
     transform: translateY(0px);
     transition: background 0.2s ease;
 }
 
 .button:hover {
     background: var(--blue-theme);
-    animation: buttonmove 0.2s ease forwards;
+    border: var(--red-theme) solid 3px;
 }
 
-@keyframes buttonmove {
-    from {
-      transform: translateY(1px);
-    } to {
-      transform: translateY(-4px);
+@media screen and (max-width: 1600px) {
+    .burger {
+        display: block;
+    }
+    .navbar-toggle {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+    }
+    .navbar-content {
+        padding: 0;
+    }
+    .mainnav {
+        display: none;
+        padding-bottom: 50px;
+    }
+
+    .mainnav li {
+        text-align: center;
+        margin: 30px auto;
+        font-size: 20px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+    .twitter img, .facebook img {
+        width: 30px;
+    }
+
+    .socialmedia-position {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+    .active {
+        display: block;
+    }
+    
+    .navbar {
+        min-height: 80px;
+    }
+
+    .socialmedia-position {
+        justify-content: center;
     }
 }
-
