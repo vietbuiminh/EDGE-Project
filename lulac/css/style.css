@@ -1,0 +1,77 @@
+:root {
+    --blue-theme: #051E5C;
+    --red-theme: #BF1140;
+    --opacity-blue-theme: #051e5cda;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+        /* For webkit */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--red-theme);
+}
+
+/* Navigation bar */
+.navbar {
+    background: var(--opacity-blue-theme);
+        /* For webkit */
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+
+/* Parallax Effect for background images */
+.bg {
+    background-image: url('./img/lulac-bg.jpg');
+    height: 100vh;
+    color: #ccc;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+
+/* Button for the general sites */
+.button {
+    background: var(--red-theme);
+    border-radius: 3em;
+    color: white;
+    padding: 5px 20px;
+    margin: auto;
+    width: fit-content;
+    transform: translateY(0px);
+    transition: background 0.2s ease;
+}
+
+.button:hover {
+    background: var(--blue-theme);
+    animation: buttonmove 0.2s ease forwards;
+}
+
+@keyframes buttonmove {
+    from {
+      transform: translateY(1px);
+    } to {
+      transform: translateY(-4px);
+    }
+}
+
