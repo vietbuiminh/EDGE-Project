@@ -1,7 +1,8 @@
 :root {
     --blue-theme: #051E5C;
     --red-theme: #BF1140;
-    --opacity-blue-theme: #051e5cc0;
+    --opacity-blue-theme: #051e5cd5;
+    --opacity-red-theme: #bf113fd2;
 }
 
 * {
@@ -15,7 +16,7 @@
 }
 
 html, body {
-    font-size: 21px;
+    font-size: 30px;
     font-weight: 300;
 }
 
@@ -25,12 +26,13 @@ html, body {
     margin-right: auto;
 }
 
-main p{
-    margin: 0 10%;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -39,7 +41,167 @@ header {
     width: 100%;
 }
 
+.content{
+    margin: 3% 8%;
+}
 
+main h1 {
+    font-size: 53px;
+}
+
+main h2 {
+    font-size: 40px;
+}
+
+main p {
+    line-height: 39px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 50px;
+    margin: 50px 0;
+}
+
+.two-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-major {
+    grid-template-columns: 1fr 2fr;
+}
+
+.right-major {
+    grid-template-columns: 2fr 1fr;
+}
+
+.left-column {
+    position: relative;
+}
+.right-column {
+    position: relative;
+    display: flex;
+}
+.divider {
+    height: 100%;
+    margin-right: 30px;
+    border-right: var(--red-theme) solid 2px;
+}
+
+.blue-text {
+    color:var(--blue-theme);
+}
+.red-text {
+    color:var(--red-theme);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.data-card {
+    background-color: var(--blue-theme);
+    color: white;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.data-card h1 {
+    font-size: 110px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-card p {
+    position: absolute;
+    bottom: 20px;
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+}
+
+.red {
+    background-color: var(--red-theme);
+}
+.blue {
+    background-color: var(--blue-theme);
+}
+
+.red-opacity {
+    background-color: var(--opacity-red-theme);
+}
+
+.blue-opacity {
+    background-color: var(--opacity-blue-theme);
+}
+.joinbox {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 10%;
+}
+
+.joinbox p {
+    font-size: 40px;
+}
+
+.container {
+    height: 500px;
+    background-color: black;
+    position: relative;
+}
+
+.container img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 83px;
+    transition: 0.3s ease;
+}
+  
+.container:hover .overlay {
+    height: 100%;
+}
+.text {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.animate-hover {
+    box-shadow: -1px 2px 5px -2px var(--opacity-blue-theme);
+    transform: translateY(0);
+    transition: transform 0.1s ease, 
+                box-shadow 0.2s ease;
+}
+.animate-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 15px 20px -10px var(--opacity-blue-theme);
+}
 
 /* Navigation bar */
 .burger {
@@ -70,6 +232,7 @@ header {
     backdrop-filter: blur(5px);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar-content {
@@ -129,6 +292,7 @@ header {
 }
 
 .logo h1 {
+    color: white;
     margin-top: 8px;
     font-size: 50px;
 }
@@ -138,6 +302,20 @@ header {
     height: auto;
 }
 /* End of Navigation Bar */
+
+/*Footer*/
+footer {
+    background-image: linear-gradient(var(--opacity-blue-theme), var(--opacity-blue-theme)), url('../img/footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+/*End of Footer*/
 
 /* Parallax Effect for background images */
 .bg {
@@ -173,6 +351,40 @@ header {
 }
 
 @media screen and (max-width: 1600px) {
+    .grid {
+        display: block;
+    }
+
+    html, body {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    main p {
+        line-height: unset;
+    }
+
+    main h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    main h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .parallax {
+        background-attachment: local;
+    }
+
+    .bg {
+        height: 400px;
+    }
     .burger {
         display: block;
     }
