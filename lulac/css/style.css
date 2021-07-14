@@ -359,6 +359,7 @@ footer a {
 .footer-nav a {
   font-weight: normal;
   padding: 2px 0;
+  width: fit-content;
 }
 
 .lulac {
@@ -384,7 +385,7 @@ footer span {
 /* Parallax Effect for background images */
 .bg {
   background-image: url("../img/lulac-bg.jpg");
-  height: 80vh;
+  height: 75vh;
   max-height: 1080px;
 }
 .parallax {
