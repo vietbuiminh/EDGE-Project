@@ -95,6 +95,10 @@ header {
   grid-gap: 10px;
 }
 
+.socialmedia-grid a {
+  height: fit-content;
+}
+
 .twitter img,
 .facebook img {
   width: 40px;
