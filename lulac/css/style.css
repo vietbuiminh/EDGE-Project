@@ -231,8 +231,8 @@ main p {
 .data-card {
   background-color: var(--blue-theme);
   color: white;
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   margin: 20px;
   border-radius: 8px;
   position: relative;
@@ -390,7 +390,7 @@ footer span {
 .bg {
   background-image: url("../img/lulac-bg.jpg");
   height: 75vh;
-  max-height: 1080px;
+  max-height: 900px;
 }
 .parallax {
   background-attachment: fixed;
