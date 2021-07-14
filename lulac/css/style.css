@@ -383,6 +383,7 @@ footer span {
   display: flex;
   justify-content: space-between;
   padding: 0 10px 10px;
+  font-size: 0.9em;
 }
 /*End of Footer*/
 
@@ -497,6 +498,10 @@ footer span {
     position: relative;
     justify-content: flex-end;
   }
+
+  .left-column {
+    padding-bottom: 30px;
+  }
   .active {
     display: block;
   }
@@ -559,4 +564,6 @@ footer span {
   .container {
     height: 200px;
   }
+
+  
 }
