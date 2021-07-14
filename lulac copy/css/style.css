@@ -339,6 +339,7 @@ footer {
     url("../img/footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
   position: relative;
 }
@@ -565,5 +566,7 @@ footer span {
     height: 200px;
   }
 
-  
+  .footer-nav a{
+    width: unset;
+  }
 }
