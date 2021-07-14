@@ -2,9 +2,10 @@
 include('includes/header.php'); ?>
 
     <!--Header background image: Replace for other pages (if used)-->
-    <div class="parallax bg"></div>
+    <div class="parallax bg home-bg"></div>
 </header>
-
+<style>
+</style>
 <main class="justify">
     <div class="content">
         <div class="grid two-columns left-major">
