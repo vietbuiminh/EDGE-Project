@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* For webkit */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --col1: #d64045;
+  --col2: #e9fff9;
+  --col3: #9ed8db;
+  --col4: #467599;
+  --col5: #1d3354;
+}
+
+.justify {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adjust {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.list-style-remove {
+  list-style-type: none;
+}
+
+/* Navigation bar */
+.burger {
+  display: none;
+  cursor: pointer;
+  padding: 8.5px 4px;
+  z-index: 3;
+}
+.burger div {
+  background-color: rgb(0, 0, 0);
+  width: 25px;
+  height: 1px;
+  margin: 6px;
+  transition: all 0.3s ease;
+}
+.toggle .l1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+.toggle .l2 {
+  opacity: 0;
+}
+.toggle .l3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navlink {
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.to-the-right {
+  display: grid;
+  justify-items: end;
+}
+.contact-topnav {
+  display: inline-grid;
+  grid-template-columns: 40px 40px 40px;
+  gap: 0.25em;
+  padding-top: 0.5em;
+}
+
+.contact-topnav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-topnav img {
+  width: 30px;
+}
+
+.logowrapper {
+  display: grid;
+  grid-template-columns: 142px auto;
+  margin-right: 39px;
+  text-decoration: none;
+}
+
+.logowrapper img {
+  width: 142px;
+  border-radius: 100px;
+  border: solid 5px #84a98c;
+}
+
+.logowrapper h1 {
+  font-size: 37px;
+  color: var(--col4);
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.mainnav {
+  display: grid;
+  grid-template-columns: repeat(5, fit-content(1em));
+  justify-content: center;
+  gap: 2em;
+}
+
+.mainnav li {
+  height: auto;
+}
+
+.mainnav li a {
+  padding: 5px 10px;
+  background-color: var(--col1);
+  height: 100%;
+  width: 100%;
+}
