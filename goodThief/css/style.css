@@ -9,12 +9,17 @@
   font-family: "Work Sans", sans-serif;
 }
 
+p {
+  font-weight: 500;
+}
+
 :root {
   --col1: #d64045;
   --col2: #e9fff9;
   --col3: #9ed8db;
   --col4: #467599;
   --col5: #1d3354;
+  --height-of-navbar: 208px;
 }
 
 .justify {
@@ -32,6 +37,10 @@
 
 .list-style-remove {
   list-style-type: none;
+}
+
+.accent {
+  color: var(--col4);
 }
 
 /* Navigation bar */
@@ -59,7 +68,13 @@
 }
 
 .navbar {
+  position: fixed;
   width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 10;
+  height: var(--height-of-navbar);
+  background-color: white;
 }
 
 .navlink {
@@ -93,13 +108,13 @@
 
 .logowrapper {
   display: grid;
-  grid-template-columns: 142px auto;
-  margin-right: 39px;
+  grid-template-columns: 130px auto;
   text-decoration: none;
+  margin-left: 20px;
 }
 
 .logowrapper img {
-  width: 142px;
+  width: 130px;
   border-radius: 100px;
   border: solid 5px #84a98c;
 }
@@ -117,16 +132,108 @@
   display: grid;
   grid-template-columns: repeat(5, fit-content(1em));
   justify-content: center;
-  gap: 2em;
+  gap: 1em;
 }
 
 .mainnav li {
   height: auto;
+  padding: 7px 10px;
 }
 
 .mainnav li a {
-  padding: 5px 10px;
-  background-color: var(--col1);
+  padding: 7px 10px;
   height: 100%;
   width: 100%;
+  font-size: 1.2em;
+}
+
+.mainnav li:hover a {
+  background-color: var(--col1);
+  color: white;
+}
+
+.headerwrapper {
+  padding-top: var(--height-of-navbar);
+  height: 651px;
+  width: 100%;
+  position: relative;
+}
+
+.headerwrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hoverbox {
+  position: absolute;
+  grid-template-columns: 1fr 1fr;
+  top: 65%;
+  left: 75%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.63);
+  padding: 2em 1em;
+}
+
+.hoverbox p {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  width: 350px;
+}
+
+.hoverbox span {
+  display: grid;
+  justify-content: center;
+}
+
+/************************
+BUTTON 
+************************/
+.red {
+  background-color: var(--col1) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.blue {
+  background-color: var(--col3) !important;
+  color: black;
+  border: none !important;
+}
+.button {
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 0.5em 2em;
+  border-radius: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+  border: solid black 1px;
+  background-color: white;
+}
+
+.center-button {
+  display: grid;
+  justify-content: center;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 0.8em;
+  padding-bottom: 0.3em;
+}
+
+.gridtwocolumn {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.left {
+  background-color: var(--col3);
+}
+.right {
+  background-color: var(--col1);
 }
