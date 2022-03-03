@@ -31,8 +31,8 @@ p {
 .adjust {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .extra {
@@ -124,10 +124,10 @@ p {
   position: absolute;
   right: 0;
 }
-.contact-topnav {
+.contact-topnav,
+.social-media {
   display: inline-grid;
-  grid-template-columns: 40px 40px 40px;
-  gap: 0.25em;
+  grid-template-columns: 30px 30px 30px;
   padding-top: 0.5em;
 }
 
@@ -137,13 +137,14 @@ p {
   align-items: center;
 }
 
-.contact-topnav img {
-  width: 30px;
+.contact-topnav img,
+.social-media img {
+  width: 25px;
 }
 
 .logowrapper {
   display: grid;
-  grid-template-columns: 130px auto;
+  grid-template-columns: max-content auto;
   text-decoration: none;
   margin-left: 20px;
   padding-top: 20px;
@@ -195,7 +196,14 @@ p {
   position: relative;
 }
 
-.headerwrapper img {
+.photoframe {
+  position: relative;
+  height: 342px;
+  width: 100%;
+}
+
+.headerwrapper img,
+.photoframe img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -295,4 +303,46 @@ BUTTON
 .right {
   background-color: var(--col1);
   right: 0;
+}
+
+.buttongrid {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 20px;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+
+.footerlogo {
+  display: grid;
+  justify-content: end;
+  padding-right: 1em;
+}
+
+.footerlogo img {
+  width: 100px;
+  justify-items: center;
+}
+
+footer {
+  height: 250px !important;
+}
+
+.leftcolumn {
+  padding: 1em;
+}
+
+.secondarynav li {
+  margin: 0.4em 0 !important;
+}
+
+.bottom-signature {
+  display: grid;
+  justify-content: end;
+  padding-right: 10px;
+}
+
+.bottom-signature a {
+  color: black;
 }
