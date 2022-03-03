@@ -19,7 +19,7 @@ p {
   --col3: #9ed8db;
   --col4: #467599;
   --col5: #1d3354;
-  --height-of-navbar: 208px;
+  --height-of-navbar: 186.48px;
 }
 
 .justify {
@@ -33,6 +33,38 @@ p {
   margin-right: auto;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+.extra {
+  padding-left: 20% !important;
+  padding-right: 20% !important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.extra > img {
+  max-height: 150px;
+  justify-self: center;
+}
+
+.extra h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+.extra .button {
+  text-transform: capitalize !important;
+  padding: 0.2em 2.2em;
+  font-weight: 400;
+  border: solid 2px;
+}
+
+.split {
+  grid-template-columns: 1fr 1fr !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .list-style-remove {
@@ -70,11 +102,14 @@ p {
 .navbar {
   position: fixed;
   width: 100%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.137) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.13) 0px 8px 16px -8px;
   z-index: 10;
-  height: var(--height-of-navbar);
   background-color: white;
+}
+
+.navcontent {
+  position: relative;
 }
 
 .navlink {
@@ -86,8 +121,8 @@ p {
 }
 
 .to-the-right {
-  display: grid;
-  justify-items: end;
+  position: absolute;
+  right: 0;
 }
 .contact-topnav {
   display: inline-grid;
@@ -111,6 +146,7 @@ p {
   grid-template-columns: 130px auto;
   text-decoration: none;
   margin-left: 20px;
+  padding-top: 20px;
 }
 
 .logowrapper img {
@@ -226,9 +262,31 @@ BUTTON
   padding-bottom: 0.3em;
 }
 
-.gridtwocolumn {
+.gridtwocolumn,
+.split {
   display: grid;
   grid-template-columns: auto auto;
+}
+
+.special-adjust {
+  display: grid;
+  row-gap: 30px;
+}
+
+.special-adjust * {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
+}
+.region {
+  position: relative;
+}
+
+.left,
+.right {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  z-index: -2;
 }
 
 .left {
@@ -236,4 +294,5 @@ BUTTON
 }
 .right {
   background-color: var(--col1);
+  right: 0;
 }
