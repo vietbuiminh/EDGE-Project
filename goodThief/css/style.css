@@ -75,30 +75,6 @@ p {
   color: var(--col4);
 }
 
-/* Navigation bar */
-.burger {
-  display: none;
-  cursor: pointer;
-  padding: 8.5px 4px;
-  z-index: 3;
-}
-.burger div {
-  background-color: rgb(0, 0, 0);
-  width: 25px;
-  height: 1px;
-  margin: 6px;
-  transition: all 0.3s ease;
-}
-.toggle .l1 {
-  transform: rotate(-45deg) translate(-5px, 5px);
-}
-.toggle .l2 {
-  opacity: 0;
-}
-.toggle .l3 {
-  transform: rotate(45deg) translate(-5px, -5px);
-}
-
 .navbar {
   position: fixed;
   width: 100%;
@@ -345,4 +321,91 @@ footer {
 
 .bottom-signature a {
   color: black;
+}
+
+@media screen and (max-width: 771px) {
+  .contact-topnav {
+    display: none;
+  }
+  .logowrapper {
+    padding: 10px !important;
+    margin-left: revert;
+    margin-right: 100px;
+    justify-items: center;
+    align-items: center;
+  }
+  .logowrapper img {
+    width: 80px;
+  }
+  .logowrapper h1 {
+    font-size: 5vw;
+  }
+  .headerwrapper {
+    padding: revert;
+    height: 60vh;
+  }
+  .mainnav {
+    display: grid;
+    justify-content: center;
+  }
+  .mainnav li {
+    display: grid;
+    height: 60px;
+    padding: 0;
+  }
+  .mainnav li a {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+  }
+  .hoverbox {
+    top: 60%;
+    left: 50%;
+    width: auto;
+  }
+  .hoverbox p {
+    width: auto;
+    font-size: 7vw;
+  }
+  .gridtwocolumn,
+  .split,
+  .buttongrid {
+    display: block;
+  }
+  .extra {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+  }
+  .extra > img {
+    height: 30vw;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .gridtwocolumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .leftcolumn {
+    display: grid;
+    justify-content: center;
+  }
+  .secondarynav li {
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+  }
+  .footerlogo {
+    display: none;
+  }
+  .bottom-signature {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
 }
