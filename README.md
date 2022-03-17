@@ -25,8 +25,8 @@ The EDGE Center opened in 2010 as an expansion of the Augustana Web Guild model,
 ## Table of contents
 
 - [Work flow](#work-flow)
-- [Status](#status)
-- [What's included](#whats-included)
+- [Create folder](#create-folder)
+- [Base code](#base-code)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Contributing](#contributing)
 - [Creators](#creators)
@@ -43,23 +43,52 @@ Here is a short simplified workflow of coding in EDGE
 - Inject skeleton code
 - Customize web into appropriate designs
 
-## Status
-
-Here goes all the budgets
-
-## What's included
-
-Some text
+## Create folder
 
 ```text
-folder1/
-└── folder2/
-    ├── folder3/
-    │   ├── file1
-    │   └── file2
-    └── folder4/
-        ├── file3
-        └── file4
+projectName/
+├── css/
+│   ├── responsiveNavBar.css
+│   └── style.css
+├── docs/
+├── img/
+├── js/
+│   └── responsiveNavBar.js
+└── index.html
+```
+
+## Base code
+
+### `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS Link-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--<link rel="stylesheet" href="css/responsiveNavBar.css">-->
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script src="js/responsiveNavBar.js"></script>
+  </body>
+</html>
 ```
 
 ## Bugs and feature requests
