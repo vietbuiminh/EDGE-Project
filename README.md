@@ -8,7 +8,7 @@
   <p align="center">
     Resources, collections, projects made by Viet (Ethan) Bui.
     
-    Entrepreneurial Development through Guided Experiences (which is a bit of a mouthful). EDGE connects students with community organizations in need of communications, marketing and creative services.
+Entrepreneurial Development through Guided Experiences (which is a bit of a mouthful). EDGE connects students with community organizations in need of communications, marketing and creative services.
 
 The students learn technical skills, build soft skills, and gain experience to enhance their portfolios and resumes. Businesses and not-for-profit organizations gain a low-cost resource for their marketing needs.
 
