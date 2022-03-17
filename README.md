@@ -88,30 +88,127 @@ projectName/
 </html>
 ```
 
+### `responsiveNavBar.js`
+
+```JavaScript
+// Code written by Viet (Ethan) Bui
+// This responsive nav bar is good for simple nav bar without the drop down nav
+const mainNav = document.getElementById('menu');
+const navBarToggle = document.getElementById('js-navbar-toggle');
+const burger = document.querySelector(".burger");
+
+navBarToggle.addEventListener('click', function () {
+    burger.classList.toggle('toggle');
+    mainNav.classList.toggle('active');
+});
+```
+
+### `responsiveNavBar.css`
+
+```css
+:root {
+  --col1: #d64045;
+  --col2: #e9fff9;
+  --col3: #9ed8db;
+  --col4: #467599;
+  --col5: #1d3354;
+  --height-of-navbar: 186.48px;
+}
+/* Navigation bar */
+.burger {
+  display: none;
+  cursor: pointer;
+  padding: 8.5px 4px;
+  z-index: 10;
+  background-color: var(--col3);
+  border-radius: 10px;
+}
+.burger div {
+  background-color: var(--col5);
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  transition: all 0.3s ease;
+}
+.toggle .l1 {
+  transform: rotate(-45deg) translate(-6.5px, 6.5px);
+}
+.toggle .l2 {
+  opacity: 0;
+}
+.toggle .l3 {
+  transform: rotate(45deg) translate(-6.5px, -6.5px);
+}
+
+@media screen and (max-width: 771px) {
+  .mainnav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .navbar-toggle {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+  }
+  .active {
+    display: block;
+  }
+}
+```
+
+### `style.css `
+
+some base style, customized by coders
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  /* For webkit */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+
+.justify {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adjust {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+```
+
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://reponame/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://reponame/issues/new).
+Have a bug or a feature request? Please send connection with me through GitHub
+https://github.com/vietbuiminh
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://reponame/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-Moreover, all HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Main author](https://github.com/usernamemainauthor).
-
-Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
+Just fork this repo and I will check the contributions :D
 
 ## Creators
 
-**Creator 1**
+**Viet (Ethan) Bui | Augie**
 
-- <https://github.com/usernamecreator1>
+- <https://github.com/vietbuiminh>
 
 ## Thanks
 
-Some Text
+Thank you so checking my template. Hope you advance in web dev in Augustana Web Guild
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2018 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
+Code and documentation copyright 2021-2022 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
 
 Enjoy :metal:
