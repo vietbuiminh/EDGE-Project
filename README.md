@@ -24,7 +24,7 @@ The EDGE Center opened in 2010 as an expansion of the Augustana Web Guild model,
 
 ## Table of contents
 
-- [Quick start](#quick-start)
+- [Work flow](#work-flow)
 - [Status](#status)
 - [What's included](#whats-included)
 - [Bugs and feature requests](#bugs-and-feature-requests)
@@ -33,13 +33,15 @@ The EDGE Center opened in 2010 as an expansion of the Augustana Web Guild model,
 - [Thanks](#thanks)
 - [Copyright and license](#copyright-and-license)
 
-## Quick start
+## Work flow
 
-Some text
+Here is a short simplified workflow of coding in EDGE
 
-- Instruction 1
-- Instruction 2
-- Instruction 3
+- Set up folders in VSCode
+- Create initial files for web project
+- Inject core code
+- Inject skeleton code
+- Customize web into appropriate designs
 
 ## Status
 
