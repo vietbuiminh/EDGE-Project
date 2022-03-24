@@ -5,8 +5,23 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
   font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --black-transparent-background: rgba(0, 0, 0, 0.75);
+  --gold: #ead189;
+  --navy: #00295d;
+}
+
+.list-style-remove {
+  list-style-type: none;
+}
+
+/*To ensure the content inside the list not overflow the list*/
+ul li {
+  display: contents;
 }
 
 .justify {
@@ -20,4 +35,106 @@
   margin-right: auto;
   padding-left: 10%;
   padding-right: 10%;
+}
+
+/*Nav Bar*/
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--black-transparent-background);
+  bottom: 0;
+}
+.navcontent {
+  position: relative;
+  display: grid;
+  grid-template-columns: 55px auto;
+}
+.nav-logo {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide .hide-logo {
+  display: none;
+}
+
+.hide .navcontent {
+  grid-template-columns: 1fr;
+}
+.nav-logo img {
+  height: 55px;
+  width: auto;
+  padding-left: 2em;
+  opacity: 0.5;
+  transition: opacity 500ms ease-in-out;
+}
+
+.nav-logo:hover img {
+  opacity: 1;
+}
+.navlink {
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.mainnav {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: center;
+}
+
+.mainnav a {
+  font-weight: 500;
+  padding: 2em 1em;
+}
+
+.mainnav a:hover {
+  background-color: var(--gold);
+  color: var(--navy);
+  transition: 100ms ease-in-out;
+}
+
+/*When the js detect user scroll pass the screen height*/
+.scrolled {
+  position: fixed;
+  bottom: revert !important;
+}
+
+.scrolled-animated {
+  transform: translate(0, -100px);
+  animation: move-navbar-down 1s ease-in-out forwards;
+}
+
+@keyframes move-navbar-down {
+  from {
+    transform: translate(0, -100px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+.headerwrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.headerwrapper .full-screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.headerwrapper .logowrapper {
+  position: absolute;
+  right: 0;
+  padding: 2em 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--navy);
 }
