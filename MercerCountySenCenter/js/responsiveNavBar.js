@@ -38,7 +38,7 @@ const headerbgObserver = new IntersectionObserver(function(
         })
     }, headerbgOptions);
 //Only use this in Home Page
-if (document.getElementById('Home')) {
+if (document.getElementById('Home') && (window.innerHeight <= window.innerWidth)) {
     headerbgObserver.observe(headerbg);
 } else {
     navbar.classList.add("scrolled");
