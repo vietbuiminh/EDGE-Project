@@ -80,7 +80,13 @@ projectName/
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <div class="burger navbar-toggle" id="js-navbar-toggle">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
     <script src="js/responsiveNavBar.js"></script>
