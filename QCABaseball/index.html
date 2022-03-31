@@ -6,19 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Google Fonts-->
-    <link rel="" href="" />
-    <link rel="" href="" crossorigin />
-    <link href="" rel="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balthazar&family=Lato:wght@700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <!--CSS Link-->
     <link rel="stylesheet" href="css/style.css" />
     <!--<link rel="stylesheet" href="css/responsiveNavBar.css">-->
 
-    <title>Document</title>
+    <title>Home | QCABaseball</title>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <!--BaseCode for Nav Bar-->
+        <nav class="navbar hide">
+            <div class="navcontent justify">
+                <a href="" class="nav-logo">
+                    <img src="./img/Logo.png" alt="QCABaseball Logo" />
+                </a>
+                <div class="burger navbar-toggle" id="js-navbar-toggle">
+                    <div class="l1"></div>
+                    <div class="l2"></div>
+                    <div class="l3"></div>
+                </div>
+                <ul class="mainnav list-style-remove" id="menu">
+                    <li><a href="index.html" class="navlink">Home</a></li>
+                    <li><a href="" class="navlink">About Us</a></li>
+                    <li><a href="" class="navlink">Teams</a></li>
+                    <li><a href="" class="navlink">Sponsors</a></li>
+                    <li><a href="" class="navlink">Awards</a></li>
+                    <li><a href="" class="navlink">Forms</a></li>
+                    <li><a href="" class="navlink">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="headerwrapper">
+            <img class="full-screen" src="./img/teamPhoto.jpg" alt="Team Photo" />
+        </div>
+    </header>
+    <main class="justify">
+        <div class="contents adjust">
+            <div class="two-columns-grid">
+                <div class="roster">
+                    <h1>Team Roster</h1>
+                    <span><span div="line"></span>
+                        <p>2022</p><span div="line"></span>
+                    </span>
+                    <div class="player-names two-columns-grid">
+                        <p class="name">NAME</p>
+                        <p class="number">#</p>
+                        <p class="name">NAME</p>
+                        <p class="number">#</p>
+                        <p class="name">NAME</p>
+                        <p class="number">#</p>
+                        <p class="name">NAME</p>
+                        <p class="number">#</p>
+                        <p class="name">NAME</p>
+                        <p class="number">#</p>
+                        <p class="name">NAME</p>
+                        <p class="number">#</p>
+                        <p class="name">NAME</p>
+                        <p class="number">#</p>
+                        <p class="name">NAME</p>
+                        <p class="number">#</p>
+                    </div>
+                </div>
+                <div class="mission">
+                    <h1>Mission Statement</h1>
+                    <p>Statement</p>
+                    <div class="two-columns-grid">
+                        <div class="photo-frame"></div>
+                        <div class="clickable"></div>
+                        <div class="clickable"></div>
+                        <div class="photo-frame"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
     <footer></footer>
     <script src="js/responsiveNavBar.js"></script>
 </body>
