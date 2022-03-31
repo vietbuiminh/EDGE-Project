@@ -81,6 +81,7 @@ projectName/
 
   <body>
     <header>
+      <!--BaseCode for Nav Bar-->
       <nav class="navbar hide">
             <div class="navcontent justify">
                 <a href="" class="nav-logo">
