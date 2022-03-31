@@ -81,10 +81,21 @@ projectName/
 
   <body>
     <header>
-      <div class="burger navbar-toggle" id="js-navbar-toggle">
-        <div class="l1"></div>
-        <div class="l2"></div>
-        <div class="l3"></div>
+      <nav class="navbar hide">
+            <div class="navcontent justify">
+                <a href="" class="nav-logo">
+                    <img/>
+                </a>
+                <div class="burger navbar-toggle" id="js-navbar-toggle">
+                    <div class="l1"></div>
+                    <div class="l2"></div>
+                    <div class="l3"></div>
+                </div>
+                <ul class="mainnav list-style-remove" id="menu">
+                    <li><a href="index.html" class="navlink">Home</a></li>
+                </ul>
+            </div>
+        </nav>
       </div>
     </header>
     <main></main>
