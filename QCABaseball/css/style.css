@@ -12,6 +12,8 @@
 
 :root {
   --theme: #1f6657;
+  --bright-green: #32a23c;
+  --border-style: solid 40px var(--bright-green);
 }
 
 .justify {
@@ -29,9 +31,12 @@
 
 /*Navigation bar*/
 .navcontent {
-  background-color: var(--theme);
   display: grid;
   justify-content: center;
+  border-left: var(--border-style);
+  border-right: var(--border-style);
+  max-width: 800px;
+  padding: 0.2em;
 }
 
 .navcontent ul {
@@ -44,7 +49,7 @@
   display: grid;
   grid-template-columns: repeat(7, fit-content(10em));
   justify-content: center;
-  gap: 2em;
+  gap: 1.5em;
 }
 
 .navlink {
@@ -53,4 +58,14 @@
   position: relative;
   text-decoration: none;
   color: black;
+}
+
+.nav-logo {
+  display: grid;
+  justify-self: center;
+  padding: 0.5em;
+}
+
+.nav-logo img {
+  height: 70px;
 }
