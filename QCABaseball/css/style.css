@@ -10,6 +10,10 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
+:root {
+  --theme: #1f6657;
+}
+
 .justify {
   max-width: 1080px;
   margin-left: auto;
@@ -21,4 +25,32 @@
   margin-right: auto;
   padding-left: 10%;
   padding-right: 10%;
+}
+
+/*Navigation bar*/
+.navcontent {
+  background-color: var(--theme);
+  display: grid;
+  justify-content: center;
+}
+
+.navcontent ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mainnav {
+  display: grid;
+  grid-template-columns: repeat(7, fit-content(10em));
+  justify-content: center;
+  gap: 2em;
+}
+
+.navlink {
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  color: black;
 }
