@@ -30,6 +30,10 @@
 }
 
 /*Navigation bar*/
+nav {
+  background-color: #32a23c;
+  background-image: url(../img/turf.jfif);
+}
 .navcontent {
   display: grid;
   justify-content: center;
@@ -37,6 +41,7 @@
   border-right: var(--border-style);
   max-width: 800px;
   padding: 0.2em;
+  background-color: white;
 }
 
 .navcontent ul {
@@ -68,4 +73,91 @@
 
 .nav-logo img {
   height: 70px;
+}
+
+.headerwrapper {
+  width: 100%;
+  position: relative;
+  display: grid;
+  background-color: var(--theme);
+}
+
+.headerwrapper img {
+  max-width: 1000px;
+  justify-self: center;
+}
+
+.headerwrapper .full-screen {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.two-columns-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.offside {
+  grid-template-columns: 250px auto !important;
+}
+
+.player-names {
+  padding: 10px;
+  gap: 0.7em;
+}
+
+.number {
+  justify-self: center;
+}
+
+.roster {
+  background-color: var(--theme);
+  color: white;
+  padding: 10px;
+}
+
+.bordered {
+  border: 2px solid white;
+}
+
+.roster h1{
+  text-align: center;
+}
+
+.centered-line {
+  overflow: hidden;
+  text-align: center;
+}
+
+.centered-line::before, 
+.centered-line::after {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.centered-line::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.centered-line::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.mission {
+  background-color: #ccc;
+  text-align: center;
+  display: grid;
+}
+
+.mission-padding {
+  justify-self: center;
+  max-width: 400px;
 }
