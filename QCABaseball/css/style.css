@@ -17,7 +17,7 @@
 }
 
 .justify {
-  max-width: 1080px;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,6 +34,7 @@ nav {
   background-color: #32a23c;
   background-image: url(../img/turf.jfif);
 }
+
 .navcontent {
   display: grid;
   justify-content: center;
@@ -44,20 +45,20 @@ nav {
   background-color: white;
 }
 
-.navcontent ul {
+.navcontent ul, .secondarynav li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.mainnav {
+.mainnav,.secondarynav {
   display: grid;
   grid-template-columns: repeat(7, fit-content(10em));
   justify-content: center;
   gap: 1.5em;
 }
 
-.navlink {
+.mainnav .navlink {
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
@@ -78,13 +79,21 @@ nav {
 .headerwrapper {
   width: 100%;
   position: relative;
-  display: grid;
   background-color: var(--theme);
+  background-image: url(../img/teamPhoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.headerwrapper img {
-  max-width: 1000px;
+.blur img {
+  max-width: 1140px;
   justify-self: center;
+}
+
+.blur {
+  display: grid;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px) brightness(10%);
 }
 
 .headerwrapper .full-screen {
@@ -112,6 +121,7 @@ nav {
 }
 
 .roster {
+  display: grid;
   background-color: var(--theme);
   color: white;
   padding: 10px;
@@ -121,7 +131,7 @@ nav {
   border: 2px solid white;
 }
 
-.roster h1{
+.roster h1 {
   text-align: center;
 }
 
@@ -130,7 +140,7 @@ nav {
   text-align: center;
 }
 
-.centered-line::before, 
+.centered-line::before,
 .centered-line::after {
   background-color: white;
   content: "";
@@ -160,4 +170,180 @@ nav {
 .mission-padding {
   justify-self: center;
   max-width: 400px;
+}
+
+.four-square {
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.photo-frame,
+.clickable {
+  background-color: var(--theme);
+  height: 120px;
+  border: solid 2px grey;
+}
+
+.move-right {
+  grid-column-start: 2;
+}
+
+.move-left {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.photo-frame {
+  position: relative;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clickable {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickable a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.three-columns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.responsive-calendar iframe {
+  left: 0;
+  top: 0;
+  height: 25vw;
+  max-width: 30vw;
+}
+
+.button-img {
+  max-width: 950px;
+  margin: 75px auto;
+}
+
+.button-container {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+}
+
+.button-container A:before {
+  content: '';
+  display: inline-block;
+  height: 48%;
+  /* 
+    vertical-align:middle; 
+    height: 100%;*/
+
+
+}
+
+
+.button-container a {
+  transition: all 500ms ease-out;
+  background: rgba(255, 255, 255, 0.399);
+  border-radius: 50%;
+  vertical-align: middle;
+  padding: 5%;
+  color: #FFFFFF;
+  text-shadow: 2px 2px black;
+  position: absolute;
+  font-size: 2em;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-container A:hover {
+  background: none;
+  border: none;
+  opacity: 0;
+}
+
+.button-container img {
+  width: 100%;
+  height: auto;
+  display: block
+}
+
+.responsive-calendar {
+  display: grid;
+  justify-content: center;
+}
+
+footer {
+  background-color: var(--theme);
+  color: white !important;
+  margin-top: 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap:1em;
+  padding: 1em;
+  position: relative;
+}
+
+.secondarynav a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.left {
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.left p{
+  font-size: small; 
+  font-weight: lighter;
+}
+
+.left .logo img{
+  height: 6em;
+}
+
+.middle iframe {
+  position: absolute;
+  bottom: 50px;
+  transform: translateX(50%);
+  right: 50%;
+}
+
+.middle {
+  display: grid;
+  align-items: flex-end;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
