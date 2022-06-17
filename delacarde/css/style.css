@@ -5,19 +5,31 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-family: "Playfair Display", serif;
+    font-family: 'Open Sans', sans-serif;
   }
   
-  .justify {
-    max-width: 1080px;
+.justify {
+    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .adjust {
+}
+
+.adjust {
     margin-left: auto;
     margin-right: auto;
     padding-left: 10%;
     padding-right: 10%;
-  }
+}
+
+:root {
+    --pupl: #38023B;
+    --drk-pupl: #240115;
+    --rd: #EB102F;
+    --blu: #2F6690;
+    --lght-blu: #C2DFE3;
+}
+
+.navbar {
+    background-color: var(--pupl);
+    color: white;
+}
