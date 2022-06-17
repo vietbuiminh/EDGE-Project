@@ -9,7 +9,7 @@
   }
   
 .justify {
-    max-width: 1920px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,7 +29,155 @@
     --lght-blu: #C2DFE3;
 }
 
+/*Button */
+.button {
+    background-color: var(--rd);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    transition: 0.2s all;
+}
+
+.button:hover {
+    box-shadow:
+              1px 3px 10px 1px rgba(228, 0, 0, 0.384);
+}
+
+.button:active {
+    background-color: var(--blu);
+    box-shadow:
+              7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+
+/*Navigation bar Section */
+
 .navbar {
+    /* position: fixed; */
     background-color: var(--pupl);
     color: white;
+    width: 100%;
+    z-index: 10;
+}
+
+.mainnav {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.mainnav a {
+    font-weight: 600;
+    padding: 0.7em 1em;
+}
+
+.mainnav a:hover {
+    background-color: var(--drk-pupl);
+    color: var(--navy);
+    transition: 100ms ease-in-out;
+}
+
+.navlink {
+    display: grid;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    align-items: cssenter;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    margin-left: auto;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.social-media a img {
+    width: 25px;
+}
+
+.nav-logo img {
+    height: 55px;
+    width: auto;
+}
+
+.navcontent {
+    position: relative;
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.nav-logo {
+    display: grid;
+    grid-column: 1;
+    grid-row: span 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainnav {
+    grid-column: 2;
+}
+
+.headerwrapper {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+  
+.headerwrapper .full-screen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+
+.headerwrapper .text-wrapper {
+    position: absolute;
+    top: 0;
+    display: grid;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+.text-wrapper p {
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 40px 30px;
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+
+.positioning .button {
+    padding: 1em 1.5em;
+    font-size: 20px;
+}
+
+.grid-img-txt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+.image-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
