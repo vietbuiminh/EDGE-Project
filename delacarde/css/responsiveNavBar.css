@@ -1,0 +1,50 @@
+:root {
+    --col1: #d64045;
+    --col2: #e9fff9;
+    --col3: #9ed8db;
+    --col4: #467599;
+    --col5: #1d3354;
+    --height-of-navbar: 186.48px;
+  }
+  /* Navigation bar */
+  .burger {
+    display: none;
+    cursor: pointer;
+    padding: 8.5px 4px;
+    z-index: 10;
+    background-color: var(--col3);
+    border-radius: 10px;
+  }
+  .burger div {
+    background-color: var(--col5);
+    width: 30px;
+    height: 2px;
+    margin: 7px;
+    transition: all 0.3s ease;
+  }
+  .toggle .l1 {
+    transform: rotate(-45deg) translate(-6.5px, 6.5px);
+  }
+  .toggle .l2 {
+    opacity: 0;
+  }
+  .toggle .l3 {
+    transform: rotate(45deg) translate(-6.5px, -6.5px);
+  }
+  
+  @media screen and (max-width: 771px) {
+    .mainnav {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+    .navbar-toggle {
+      position: absolute;
+      top: 17px;
+      right: 20px;
+    }
+    .active {
+      display: block;
+    }
+  }

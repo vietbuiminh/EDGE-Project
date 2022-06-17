@@ -188,8 +188,6 @@ some base style, customized by coders
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Playfair Display", serif;
 }
 
 .justify {

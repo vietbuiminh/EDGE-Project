@@ -1,0 +1,62 @@
+<!--
+ __          __  _     _____            _              __      ___                        
+ \ \        / / | |   |  __ \          (_)             \ \    / (_)                       
+  \ \  /\  / /__| |__ | |  | | ___  ___ _  __ _ _ __    \ \  / / _  _____      _____ _ __ 
+   \ \/  \/ / _ \ '_ \| |  | |/ _ \/ __| |/ _` | '_ \    \ \/ / | |/ _ \ \ /\ / / _ \ '__|
+    \  /\  /  __/ |_) | |__| |  __/\__ \ | (_| | | | |    \  /  | |  __/\ V  V /  __/ |   
+     \/  \/ \___|_.__/|_____/ \___||___/_|\__, |_| |_|     \/   |_|\___| \_/\_/ \___|_|   
+                                           __/ |                                          
+                                          |___/                                           
+Simple code created by Viet M. Bui
+You dont need coding skill to use this :D cheers
+To run this please use:
+- Visual Studio Code w/ Live Server installed
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Viewer</title>
+</head>
+
+<body>
+    <!--
+        Change the --padding-px if you design is too narrow
+        Change the --background-color if needed
+            background-color using hex color that you can just paste it there
+    -->
+    <style>
+        /*Change here if needed
+        example:
+            --padding-px: 250px;
+            --background-color: #000000; 
+        */
+        :root {
+            --padding-px: 0;
+            --background-color: #fff;
+        }
+
+        body {
+            background-color: var(--background-color);
+        }
+
+        .adjust {
+            padding-left: var(--padding-px);
+            padding-right: var(--padding-px);
+        }
+    </style>
+    <main class="justify">
+        <div class="content adjust">
+            <!--Edit src following your file name-->
+            <img class="window-version" src="designs/krib.png" alt="viewer design on big screen version" srcset="" />
+            <img class="mobile-version" src="designs/Iphone 11 Pro_X.png" alt="viewer design on mobile screen such as phone or tablet" srcset="">
+        </div>
+    </main>
+
+</body>
+
+</html>
