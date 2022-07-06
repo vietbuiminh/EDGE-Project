@@ -24,9 +24,14 @@ The EDGE Center opened in 2010 as an expansion of the Augustana Web Guild model,
 
 ## Table of contents
 
+- [Table of contents](#table-of-contents)
 - [Work flow](#work-flow)
 - [Create folder](#create-folder)
 - [Base code](#base-code)
+  - [`index.html`](#indexhtml)
+  - [`responsiveNavBar.js`](#responsivenavbarjs)
+  - [`responsiveNavBar.css`](#responsivenavbarcss)
+  - [`style.css `](#stylecss-)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Contributing](#contributing)
 - [Creators](#creators)
@@ -111,6 +116,7 @@ projectName/
 ```JavaScript
 // Code written by Viet (Ethan) Bui
 // This responsive nav bar is good for simple nav bar without the drop down nav
+// ONLY FOR SIMPLE NAVBAR. DROPDOWN NAV BAR DO NOT USE THIS
 const mainNav = document.getElementById('menu');
 const navBarToggle = document.getElementById('js-navbar-toggle');
 const burger = document.querySelector(".burger");
@@ -217,7 +223,7 @@ Websites that built on this workflow:
 
 - [Moline Public School Foundation](http://www.molinepsf.org/)
 - [LULAC #5285](https://lulacmoline.org/)
-- [CoolQC](https://webgeeksrus.com/test/coolqc)
+- [CoolQC](https://cool-qc.org)
 - [GoodThief](https://webgeeksrus.com/test/good-thief/index.php)
 - [Mercer County Senior Center](https://webgeeksrus.com/test/mercerCSC)
 
