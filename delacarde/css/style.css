@@ -6,8 +6,24 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-  }
-  
+}
+
+html {
+    overflow-x: hidden;
+}
+body {
+    background-color: var(--drk-pupl);
+}
+
+main,
+header {
+    background-color: white;
+}
+
+p {
+    line-height: 2em;
+}
+
 .justify {
     max-width: 1200px;
     margin-left: auto;
@@ -27,6 +43,7 @@
     --rd: #EB102F;
     --blu: #2F6690;
     --lght-blu: #C2DFE3;
+    --theme-border: solid 0.5px rgb(228, 228, 228);
 }
 
 /*Button */
@@ -43,13 +60,13 @@
 
 .button:hover {
     box-shadow:
-              1px 3px 10px 1px rgba(228, 0, 0, 0.384);
+        1px 3px 10px 1px rgba(228, 0, 0, 0.384);
 }
 
 .button:active {
     background-color: var(--blu);
     box-shadow:
-              7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+        7px 6px 28px 1px rgba(0, 0, 0, 0.24);
 }
 
 /*Navigation bar Section */
@@ -62,14 +79,14 @@
     z-index: 10;
 }
 
-.mainnav {
+.mainnav, .secondary-nav {
     display: grid;
     grid-template-columns: repeat(6, auto);
     justify-content: space-evenly;
     list-style: none;
 }
 
-.mainnav a {
+.mainnav a, .secondary-nav a {
     font-weight: 600;
     padding: 0.7em 1em;
 }
@@ -132,8 +149,9 @@
     width: 100%;
     height: 70vh;
     position: relative;
+    border-bottom: var(--theme-border);
 }
-  
+
 .headerwrapper .full-screen {
     width: 100%;
     height: 100%;
@@ -168,16 +186,325 @@
 .grid-img-txt {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 1em;
 }
 
 .image-wrapper {
+    margin-left: auto;
+    margin-right: -70px;
+    margin-top: auto;
+    margin-bottom: auto;
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 550px;
+    height: 400px;
 }
 
 .image-wrapper img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.intro-info {
+    background-color: var(--blu);
+    color: white;
+    padding: 2em 3em 2em 7em;
+}
+
+.intro-info p {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+
+
+.content h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.featured-news h2,
+.our-work h2,
+.partners h2 {
+    text-align: center;
+}
+
+.featured-news {
+    padding: 2em 0;
+}
+
+/* Edit the carousel*/
+.news-carousel {
+    padding-top: 2em;
+}
+.carousel_snapper {
+    position: relative;
+}
+
+.img-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.img-wrapper img {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: none;
+    object-fit: cover;
+}
+
+.overlay-text {
+    display: grid;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.499);
+}
+
+.position-text {
+    padding-left: 5em;
+    color: white !important;
+}
+
+.position-text h2 {
+    text-align: left;
+    font-size: 60px;
+}
+
+.position-text p {
+    padding-bottom: 1em;
+}
+
+.position-text .button{
+    z-index: 2;
+}
+
+/*End of Carousel*/
+
+.our-work {
+    background-color: var(--lght-blu);
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+}
+
+.our-work .grid-3-columns {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.column {
+    padding-top: 2em;
+}
+
+.column .text-box .button {
+    margin: auto !important;
+}
+
+.position-center {
+    display: grid;
+    justify-content: center;
+}
+
+.position-center img {
+    height: 130px;
+    position: relative;
+}
+
+.column .text-box {
+    background-color: white;
+    border: var(--theme-border);
+    padding: 1em 2em;
+    margin-top: 1em;
+}
+
+.column .text-box h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.column .text-box p {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.text-box h3 {
+    padding-bottom: 0.5em;
+}
+
+.partners {
+    padding: 3em 0;
+}
+
+.logos-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1em;
+    padding-top: 3em
+}
+
+.logos-grid .company img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+footer {
+    background-color: var(--drk-pupl);
+    color: white;
+    padding: 1.5em 0;
+}
+
+footer *>a {
+    text-decoration: none;
+    color: white;
+}
+
+footer *>a:hover {
+    text-decoration: underline;
+}
+
+footer *>p {
+    line-height: 1.5em !important;
+}
+
+.footercontent .mainnav {
+    justify-content: revert !important;
+}
+
+.footercontent .grid-three-columns {
+    padding: 30px 60px;
+}
+
+.grid-three-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.grid-three-columns .social-media {
+    margin-left: revert !important;
+}
+
+.grid-three-columns .contact-info {
+    text-align: right;
+}
+
+.center-logo {
+    display: grid;
+    align-items: end;
+}
+
+.center-logo .nav-logo img {
+    height: 70px;
+}
+
+.center-logo p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 885px) {
+    .grid-img-txt {
+        display: block;
+        padding: 0;
+    }
+    .image-wrapper {
+        margin: 0;
+        width: 100%;
+    }
+    .intro-info {
+        padding: 3em 2em;
+    }
+    .overlay-text {
+        width: revert;
+    }
+    .position-text {
+        padding-right: 5em;
+    }
+
+    .headerwrapper .text-wrapper {
+        position: absolute;
+        top: 0;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    .navbar {
+        position: fixed;
+    }
+    .navcontent {
+        display: block;
+    }
+
+    .navcontent .social-media {
+        display: none;
+    }
+
+    .navcontent .nav-logo {
+        padding: 15px;
+    }
+
+    .headerwrapper {
+        padding-top: 85px;
+    }
+}
+
+@media screen and (max-width: 652px) {
+    .grid-3-columns {
+        display: block;
+    }
+
+    .grid-three-columns {
+        display: block;
+        text-align: center;
+    }
+
+    .grid-three-columns .social-media {
+        justify-content: center;
+        margin: 0;
+    }
+    .contact-info {
+        padding-top: 2em;
+    }
+    .contact-info p{
+        text-align: center;
+    }
+
+    .secondary-nav {
+        display: block;
+    }
+
+    .text-wrapper p {
+        font-size: 20px;
+    }
+
+    .content h2 {
+        font-size: 30px !important;
+    }
+
+    .intro-info p {
+        font-size: 15px;
+    }
+
+    .column .text-box p {
+        font-size: 13px;
+    }
+    .logos-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 150px);
+    }
 }

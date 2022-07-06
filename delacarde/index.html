@@ -14,7 +14,7 @@
     <!--CSS Link-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsiveNavBar.css" />
-
+    <link rel="stylesheet" href="css/imgCarousel.css">
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
     <title>Home | DeLaCerda House</title>
 </head>
@@ -66,9 +66,9 @@
             </div>
         </div>
     </header>
-    <main class="justify">
+    <main>
         <div class="content">
-            <div class="grid-img-txt">
+            <div class="grid-img-txt justify">
                 <div class="image-wrapper">
                     <img src="images/peopleteam.png" alt="a group of people giving hi five" srcset="" />
                 </div>
@@ -86,90 +86,205 @@
                     <a href="" class="button">More on us</a>
                 </div>
             </div>
-            <div class="featured-news">
-                <h1>Featured News</h1>
+            <div class="featured-news justify">
+                <h2>Featured News</h2>
                 <div class="news-carousel">
-                    <!--
-                    WILL CODE THIS LATER 
-                -->
+                    <section class="carousel" aria-label="Gallery">
+                        <ol class="carousel__viewport">
+                            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+                                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                                </div>
+                                <div class="img-wrapper">
+                                    <img src="./images/dragqueen.png" alt="" srcset="">
+                                    <div class="overlay-text">
+                                        <div class="position-text">
+                                            <h2>Drag Queen Bingo</h2>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse fuga
+                                                molestiae
+                                                optio nobis sunt modi! Debitis, corrupti voluptatibus illo odit
+                                                voluptates
+                                                enim similique atque, non nesciunt fugit dolorem numquam consectetur.
+                                            </p>
+                                            <a href="" class="button">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                                </div>
+                                <div class="img-wrapper">
+                                    <img src="./images/dragqueen.png" alt="" srcset="">
+                                    <div class="overlay-text">
+                                        <div class="position-text">
+                                            <h2>Drag Queen Bingo</h2>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse fuga
+                                                molestiae
+                                                optio nobis sunt modi! Debitis, corrupti voluptatibus illo odit
+                                                voluptates
+                                                enim similique atque, non nesciunt fugit dolorem numquam consectetur.
+                                            </p>
+                                            <a href="" class="button">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <a href="#carousel__slide2" class="carousel__prev">Go to last slide</a>
+                                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                                </div>
+                                <div class="img-wrapper">
+                                    <img src="./images/dragqueen.png" alt="" srcset="">
+                                    <div class="overlay-text">
+                                        <div class="position-text">
+                                            <h2>Drag Queen Bingo</h2>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse fuga
+                                                molestiae
+                                                optio nobis sunt modi! Debitis, corrupti voluptatibus illo odit
+                                                voluptates
+                                                enim similique atque, non nesciunt fugit dolorem numquam consectetur.
+                                            </p>
+                                            <a href="" class="button">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                        <aside class="carousel__navigation">
+                            <ol class="carousel__navigation-list">
+                                <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                                </li>
+                                <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                                </li>
+                                <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                                </li>
+                            </ol>
+                        </aside>
+                    </section>
                 </div>
             </div>
             <div class="our-work">
                 <h2>Our Work</h2>
-                <div class="grid-3-columns">
+                <div class="grid-3-columns justify">
                     <div class="column">
-                        <img src="./images/house.svg" alt="" srcset="" />
+                        <div class="position-center">
+                            <img src="./images/house.svg" alt="" srcset="" />
+                        </div>
                         <div class="text-box">
                             <h3>Project Uno</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Repudiandae hic quae ex neque tenetur eaque corrupti sit harum
-                                libero odit tempora, beatae illo laborum laudantium eveniet,
-                                saepe suscipit sapiente. Unde?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic quae ex neque
+                                tenetur eaque corrupti sit harum
+                                libero odit tempora.
                             </p>
-                            <a href="" class="button">Learn More</a>
+                            <div class="position-center">
+                                <a href="" class="button">Learn More</a>
+                            </div>
                         </div>
                     </div>
                     <div class="column">
-                        <img src="./images/lifesaver.svg" alt="" srcset="" />
+                        <div class="position-center">
+                            <img src="./images/lifesaver.svg" alt="" srcset="" />
+                        </div>
                         <div class="text-box">
                             <h3>Project Dos</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Repudiandae hic quae ex neque tenetur eaque corrupti sit harum
-                                libero odit tempora, beatae illo laborum laudantium eveniet,
-                                saepe suscipit sapiente. Unde?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic quae ex neque
+                                tenetur eaque corrupti sit harum
+                                libero odit tempora.
                             </p>
-                            <a href="" class="button">Learn More</a>
+                            <div class="position-center">
+                                <a href="" class="button">Learn More</a>
+                            </div>
                         </div>
                     </div>
                     <div class="column">
-                        <img src="./images/medical.svg" alt="" srcset="" />
+                        <div class="position-center">
+                            <img src="./images/medical.svg" alt="" srcset="" />
+                        </div>
                         <div class="text-box">
                             <h3>Project Tres</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Repudiandae hic quae ex neque tenetur eaque corrupti sit harum
-                                libero odit tempora, beatae illo laborum laudantium eveniet,
-                                saepe suscipit sapiente. Unde?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic quae ex neque
+                                tenetur eaque corrupti sit harum
+                                libero odit tempora.
                             </p>
-                            <a href="" class="button">Learn More</a>
+                            <div class="position-center">
+                                <a href="" class="button">Learn More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="partners">
+            <div class="partners justify">
                 <h2>Partners & Sponsors</h2>
                 <div class="logos-grid">
                     <div class="company">
                         <img src="./images/company1.png" alt="" srcset="">
                     </div>
-                </div>
-                <div class="logos-grid">
                     <div class="company">
                         <img src="./images/company2.png" alt="" srcset="">
                     </div>
-                </div>
-                <div class="logos-grid">
                     <div class="company">
                         <img src="./images/company3.png" alt="" srcset="">
                     </div>
-                </div>
-                <div class="logos-grid">
                     <div class="company">
                         <img src="./images/company4.png" alt="" srcset="">
                     </div>
-                </div>
-                <div class="logos-grid">
                     <div class="company">
                         <img src="./images/company5.png" alt="" srcset="">
+                    </div>
+
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div>
+            <div class="footercontent justify">
+                <ul class="secondary-nav list-style-remove">
+                    <li><a href="index.html" class="navlink">Home</a></li>
+                    <li><a href="" class="navlink">About</a></li>
+                    <li><a href="" class="navlink">Events</a></li>
+                    <li><a href="" class="navlink">News</a></li>
+                    <li><a href="" class="navlink">Contact</a></li>
+                    <li><a href="" class="navlink">Donate</a></li>
+                </ul>
+                <div class="grid-three-columns">
+                    <div class="social-media">
+                        <a href="">
+                            <img src="images/iconmonstr-instagram-11-240 (1).png" alt="instagram logo" srcset="" />
+                        </a>
+                        <a href="">
+                            <img src="images/iconmonstr-facebook-1-240 (1).png" alt="instagram logo" srcset="" />
+                        </a>
+                        <a href="">
+                            <img src="images/iconmonstr-twitter-1-240.png" alt="instagram logo" srcset="" />
+                        </a>
+                    </div>
+                    <div class="center-logo">
+                        <a href="/" class="nav-logo">
+                            <img src="./images/logo-delacerda.png" alt="logo of DeLaCerda House" srcset="" />
+                        </a>
+                        <p>Ignite, Unite & Join the Fights Against HIV</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <p>Street Address</p>
+                        <p>City, State #####</p>
+                        <p>+1 (###) ###-####</p>
+                        <p>Websites by <a href="">Augustana Web Guild</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-    <footer>
-
     </footer>
     <script src="js/responsiveNavBar.js"></script>
 </body>
